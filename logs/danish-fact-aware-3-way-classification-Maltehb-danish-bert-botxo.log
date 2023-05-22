@@ -1,0 +1,8 @@
+05/04/2023 07:59:39 AM [INFO] featurizing the danish corpus for task: 3-way-classification with model architecture: fact-aware
+05/04/2023 07:59:44 AM [DEBUG] <<LOADING>> danish dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/danish
+05/04/2023 07:59:44 AM [DEBUG] working on train dataset 
+05/04/2023 07:59:44 AM [DEBUG] <Done>
+05/04/2023 07:59:44 AM [DEBUG] working on dev dataset 
+05/04/2023 07:59:44 AM [DEBUG] <Done>
+05/04/2023 07:59:44 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:59:44 AM [INFO] post-processing the dataset

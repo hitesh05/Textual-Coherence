@@ -1,0 +1,121 @@
+05/04/2023 08:32:59 AM [INFO] featurizing the danish corpus for task: 3-way-classification with model architecture: vanilla
+05/04/2023 08:33:04 AM [DEBUG] <<LOADING>> danish dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/danish
+05/04/2023 08:33:04 AM [DEBUG] working on train dataset 
+05/04/2023 08:33:05 AM [DEBUG] <Done>
+05/04/2023 08:33:05 AM [DEBUG] working on dev dataset 
+05/04/2023 08:33:05 AM [DEBUG] <Done>
+05/04/2023 08:33:05 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:33:05 AM [INFO] post-processing the dataset
+05/04/2023 08:33:05 AM [INFO] data preprocessed: 750, sentences preprocessed: 750
+05/04/2023 08:33:05 AM [INFO] featurizing the datasets..
+05/04/2023 08:33:05 AM [DEBUG] 750 data instance processed. max sent_seq_length: 512
+05/04/2023 08:33:05 AM [INFO] post-processing the dataset
+05/04/2023 08:33:05 AM [INFO] data preprocessed: 101, sentences preprocessed: 101
+05/04/2023 08:33:05 AM [INFO] featurizing the datasets..
+05/04/2023 08:33:05 AM [DEBUG] 101 data instance processed. max sent_seq_length: 512
+05/04/2023 08:33:05 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:33:06 AM [INFO] 
+command line argument captured ..
+05/04/2023 08:33:06 AM [INFO] ------------------------------------------------------------
+05/04/2023 08:33:06 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 08:33:06 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints
+05/04/2023 08:33:06 AM [INFO] gpus - 1
+05/04/2023 08:33:06 AM [INFO] epochs - 2
+05/04/2023 08:33:06 AM [INFO] batch_size - 2
+05/04/2023 08:33:06 AM [INFO] learning_rate - 1e-06
+05/04/2023 08:33:06 AM [INFO] clip_grad_norm - 0.0
+05/04/2023 08:33:06 AM [INFO] weight_decay - 0.01
+05/04/2023 08:33:06 AM [INFO] dropout_rate - 0.1
+05/04/2023 08:33:06 AM [INFO] enable_scheduler - False
+05/04/2023 08:33:06 AM [INFO] warmup_steps - 0.01
+05/04/2023 08:33:06 AM [INFO] margin - 1.0
+05/04/2023 08:33:06 AM [INFO] corpus - danish
+05/04/2023 08:33:06 AM [INFO] sub_corpus - all
+05/04/2023 08:33:06 AM [INFO] max_seq_len - 512
+05/04/2023 08:33:06 AM [INFO] max_fact_count - 50
+05/04/2023 08:33:06 AM [INFO] max_fact_seq_len - 50
+05/04/2023 08:33:06 AM [INFO] permutation_count - 20
+05/04/2023 08:33:06 AM [INFO] with_replacement - 1
+05/04/2023 08:33:06 AM [INFO] train_dataset_count - 750
+05/04/2023 08:33:06 AM [INFO] val_dataset_count - 101
+05/04/2023 08:33:06 AM [INFO] test_dataset_count - None
+05/04/2023 08:33:06 AM [INFO] inverse_pra - 0
+05/04/2023 08:33:06 AM [INFO] task - 3-way-classification
+05/04/2023 08:33:06 AM [INFO] enable_kldiv - False
+05/04/2023 08:33:06 AM [INFO] label_smoothing - 0.1
+05/04/2023 08:33:06 AM [INFO] inference - False
+05/04/2023 08:33:06 AM [INFO] online_mode - 0
+05/04/2023 08:33:06 AM [INFO] logger_exp_name - danish-vanilla-3-way-classification-Maltehb-danish-bert-botxo
+05/04/2023 08:33:06 AM [INFO] arch - vanilla
+05/04/2023 08:33:06 AM [INFO] disable_mtl - 0
+05/04/2023 08:33:06 AM [INFO] mtl_base_arch - vanilla
+05/04/2023 08:33:06 AM [INFO] model_name - Maltehb/danish-bert-botxo
+05/04/2023 08:33:06 AM [INFO] tf2_model_name - roberta-base
+05/04/2023 08:33:06 AM [INFO] use_pretrained_tf2 - 0
+05/04/2023 08:33:06 AM [INFO] sentence_pooling - none
+05/04/2023 08:33:06 AM [INFO] freeze_emb_layer - False
+05/04/2023 08:33:06 AM [INFO] exp_count - 0
+05/04/2023 08:33:06 AM [INFO] fp16 - 0
+05/04/2023 08:33:06 AM [INFO] ------------------------------------------------------------
+05/04/2023 08:33:06 AM [DEBUG] initiating training process...
+05/04/2023 08:33:36 AM [INFO] featurizing the danish corpus for task: 3-way-classification with model architecture: vanilla
+05/04/2023 08:33:41 AM [DEBUG] <<LOADING>> danish dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/danish
+05/04/2023 08:33:41 AM [DEBUG] working on test dataset 
+05/04/2023 08:33:41 AM [DEBUG] <Done>
+05/04/2023 08:33:41 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:33:41 AM [INFO] post-processing the dataset
+05/04/2023 08:33:41 AM [INFO] data preprocessed: 150, sentences preprocessed: 150
+05/04/2023 08:33:41 AM [INFO] featurizing the datasets..
+05/04/2023 08:33:41 AM [DEBUG] 150 data instance processed. max sent_seq_length: 512
+05/04/2023 08:33:41 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:33:41 AM [INFO] 
+command line argument captured ..
+05/04/2023 08:33:41 AM [INFO] ------------------------------------------------------------
+05/04/2023 08:33:41 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 08:33:41 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/danish-vanilla-3-way-classification-Maltehb-danish-bert-botxo/epoch=1.ckpt
+05/04/2023 08:33:41 AM [INFO] gpus - 1
+05/04/2023 08:33:41 AM [INFO] epochs - 10
+05/04/2023 08:33:41 AM [INFO] batch_size - 2
+05/04/2023 08:33:41 AM [INFO] learning_rate - 1e-06
+05/04/2023 08:33:41 AM [INFO] clip_grad_norm - 0.0
+05/04/2023 08:33:41 AM [INFO] weight_decay - 0.01
+05/04/2023 08:33:41 AM [INFO] dropout_rate - 0.1
+05/04/2023 08:33:41 AM [INFO] enable_scheduler - False
+05/04/2023 08:33:41 AM [INFO] warmup_steps - 0.01
+05/04/2023 08:33:41 AM [INFO] margin - 1.0
+05/04/2023 08:33:41 AM [INFO] corpus - danish
+05/04/2023 08:33:41 AM [INFO] sub_corpus - all
+05/04/2023 08:33:41 AM [INFO] max_seq_len - 512
+05/04/2023 08:33:41 AM [INFO] max_fact_count - 50
+05/04/2023 08:33:41 AM [INFO] max_fact_seq_len - 50
+05/04/2023 08:33:41 AM [INFO] permutation_count - 20
+05/04/2023 08:33:41 AM [INFO] with_replacement - 1
+05/04/2023 08:33:41 AM [INFO] train_dataset_count - None
+05/04/2023 08:33:41 AM [INFO] val_dataset_count - None
+05/04/2023 08:33:41 AM [INFO] test_dataset_count - 150
+05/04/2023 08:33:41 AM [INFO] inverse_pra - 0
+05/04/2023 08:33:41 AM [INFO] task - 3-way-classification
+05/04/2023 08:33:41 AM [INFO] enable_kldiv - False
+05/04/2023 08:33:41 AM [INFO] label_smoothing - 0.1
+05/04/2023 08:33:41 AM [INFO] inference - True
+05/04/2023 08:33:41 AM [INFO] online_mode - 0
+05/04/2023 08:33:41 AM [INFO] logger_exp_name - danish-vanilla-3-way-classification-Maltehb-danish-bert-botxo
+05/04/2023 08:33:41 AM [INFO] arch - vanilla
+05/04/2023 08:33:41 AM [INFO] disable_mtl - 0
+05/04/2023 08:33:41 AM [INFO] mtl_base_arch - vanilla
+05/04/2023 08:33:41 AM [INFO] model_name - Maltehb/danish-bert-botxo
+05/04/2023 08:33:41 AM [INFO] tf2_model_name - roberta-base
+05/04/2023 08:33:41 AM [INFO] use_pretrained_tf2 - 0
+05/04/2023 08:33:41 AM [INFO] sentence_pooling - none
+05/04/2023 08:33:41 AM [INFO] freeze_emb_layer - True
+05/04/2023 08:33:41 AM [INFO] exp_count - 0
+05/04/2023 08:33:41 AM [INFO] fp16 - 0
+05/04/2023 08:33:41 AM [INFO] ------------------------------------------------------------
+05/04/2023 08:33:41 AM [DEBUG] initiating inference process...
+05/04/2023 08:33:50 AM [INFO] frozed embedding layer
+05/04/2023 08:33:50 AM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/danish-vanilla-3-way-classification-Maltehb-danish-bert-botxo/epoch=1.ckpt
+05/04/2023 08:34:06 AM [INFO] frozed embedding layer
+05/04/2023 08:34:06 AM [DEBUG] loaded model successfully !!!
+05/04/2023 08:34:06 AM [INFO] testing on dataset : danish ( sub_dataset all ) on task : 3-way-classification
+05/04/2023 08:34:14 AM [INFO] epoch : 0 - average_test_loss : 0.841099, overall_test_acc : 0.613333
+05/04/2023 08:34:14 AM [DEBUG] testing done !!!

@@ -1,0 +1,24 @@
+05/04/2023 08:47:01 AM [INFO] featurizing the gcdc corpus: all for task: minority-classification with model architecture: fact-aware
+05/04/2023 08:47:07 AM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
+05/04/2023 08:47:07 AM [DEBUG] working on train dataset 
+05/04/2023 08:47:08 AM [DEBUG] <Done>
+05/04/2023 08:47:08 AM [DEBUG] working on dev dataset 
+05/04/2023 08:47:08 AM [DEBUG] <Done>
+05/04/2023 08:47:08 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:47:08 AM [DEBUG] <<INTEGRATING>> factual information to GCDC dataset
+05/04/2023 08:47:08 AM [DEBUG] working on train dataset (count: 3200)
+05/04/2023 08:47:08 AM [DEBUG] 0 datapoints truncated (maximum seq length : 512)
+05/04/2023 08:47:08 AM [DEBUG] 0 / 3200 datapoints contains no facts
+05/04/2023 08:47:08 AM [DEBUG] working on dev dataset (count: 800)
+05/04/2023 08:47:09 AM [DEBUG] 0 datapoints truncated (maximum seq length : 512)
+05/04/2023 08:47:09 AM [DEBUG] 0 / 800 datapoints contains no facts
+05/04/2023 08:47:09 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:47:09 AM [INFO] post-processing the dataset
+05/04/2023 08:47:09 AM [INFO] data preprocessed: 3200, sentences preprocessed: 3200
+05/04/2023 08:47:09 AM [INFO] fact preprocessed: 87013, max_fact_count_per_doc: 50
+05/04/2023 08:47:12 AM [INFO] featurizing the datasets..
+05/04/2023 08:47:13 AM [DEBUG] 3200 data instance processed. max sent_seq_length: 512
+05/04/2023 08:47:13 AM [DEBUG] max fact_seq_length: 50
+05/04/2023 08:47:29 AM [INFO] post-processing the dataset
+05/04/2023 08:47:29 AM [INFO] data preprocessed: 800, sentences preprocessed: 800
+05/04/2023 08:47:29 AM [INFO] fact preprocessed: 21875, max_fact_count_per_doc: 50

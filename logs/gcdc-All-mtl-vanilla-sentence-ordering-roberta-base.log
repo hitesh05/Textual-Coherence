@@ -1,0 +1,857 @@
+04/13/2023 11:29:56 AM [INFO] featurizing the gcdc corpus: all for task: sentence-ordering with model architecture: mtl
+04/13/2023 11:29:57 AM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
+04/13/2023 11:29:57 AM [DEBUG] working on train dataset 
+04/13/2023 11:29:58 AM [DEBUG] <Done>
+04/13/2023 11:29:58 AM [DEBUG] working on dev dataset 
+04/13/2023 11:29:58 AM [DEBUG] <Done>
+04/13/2023 11:29:58 AM [DEBUG] ------------------------------------------------------------
+04/13/2023 11:29:59 AM [INFO] single sentence doc count: 1, total doc count: 3200, obtained permutation dataset count: 63980
+04/13/2023 11:29:59 AM [INFO] single sentence doc count: 0, total doc count: 800, obtained permutation dataset count: 16000
+04/13/2023 11:29:59 AM [INFO] post-processing the dataset
+04/13/2023 11:29:59 AM [INFO] data preprocessed: 63980, sentences preprocessed: 127960
+04/13/2023 11:30:17 AM [INFO] featurizing the datasets..
+04/13/2023 11:30:18 AM [DEBUG] 63980 data instance processed. max sent_seq_length: 512
+04/13/2023 11:31:29 AM [INFO] post-processing the dataset
+04/13/2023 11:31:29 AM [INFO] data preprocessed: 16000, sentences preprocessed: 32000
+04/13/2023 11:31:33 AM [INFO] featurizing the datasets..
+04/13/2023 11:31:33 AM [DEBUG] 16000 data instance processed. max sent_seq_length: 512
+04/13/2023 11:31:52 AM [DEBUG] ------------------------------------------------------------
+04/13/2023 11:31:52 AM [INFO] label distribution in train dataset (total count: 63980)
+04/13/2023 11:31:52 AM [INFO] {1: 31990, -1: 31990}
+04/13/2023 11:31:52 AM [INFO] label distribution in dev dataset (total count: 16000)
+04/13/2023 11:31:52 AM [INFO] {1: 8000, -1: 8000}
+04/13/2023 11:31:52 AM [DEBUG] ------------------------------------------------------------
+04/13/2023 11:31:52 AM [INFO] featurizing the textual entailment corpus for task: sentence-ordering with model architecture: mtl
+04/13/2023 11:31:53 AM [DEBUG] <<LOADING>> RTE dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/RTE
+04/13/2023 11:31:53 AM [DEBUG] working on train dataset 
+04/13/2023 11:31:53 AM [DEBUG] <Done>
+04/13/2023 11:31:53 AM [DEBUG] working on dev dataset 
+04/13/2023 11:31:53 AM [DEBUG] <Done>
+04/13/2023 11:31:53 AM [DEBUG] ------------------------------------------------------------
+04/13/2023 11:32:08 AM [INFO] post-processing the dataset
+04/13/2023 11:32:08 AM [INFO] data preprocessed: 2489, sentences preprocessed: 4978
+04/13/2023 11:32:09 AM [INFO] featurizing the datasets..
+04/13/2023 11:32:09 AM [DEBUG] 2489 data instance processed. max sent_seq_length: 512
+04/13/2023 11:32:09 AM [INFO] post-processing the dataset
+04/13/2023 11:32:09 AM [INFO] data preprocessed: 277, sentences preprocessed: 554
+04/13/2023 11:32:09 AM [INFO] featurizing the datasets..
+04/13/2023 11:32:09 AM [DEBUG] 277 data instance processed. max sent_seq_length: 512
+04/13/2023 11:33:41 AM [DEBUG] ------------------------------------------------------------
+04/13/2023 11:33:41 AM [INFO] label distribution for train textual entailment dataset (total count: 2489)
+04/13/2023 11:33:41 AM [INFO] {0: 1240, 1: 1249}
+04/13/2023 11:33:41 AM [INFO] label distribution for dev textual entailment dataset (total count: 277)
+04/13/2023 11:33:41 AM [INFO] {0: 131, 1: 146}
+04/13/2023 11:33:41 AM [DEBUG] ------------------------------------------------------------
+04/13/2023 11:33:42 AM [INFO] 
+command line argument captured ..
+04/13/2023 11:33:42 AM [INFO] ------------------------------------------------------------
+04/13/2023 11:33:42 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+04/13/2023 11:33:42 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints
+04/13/2023 11:33:42 AM [INFO] gpus - 1
+04/13/2023 11:33:42 AM [INFO] epochs - 5
+04/13/2023 11:33:42 AM [INFO] batch_size - 2
+04/13/2023 11:33:42 AM [INFO] learning_rate - 1e-06
+04/13/2023 11:33:42 AM [INFO] clip_grad_norm - 0.0
+04/13/2023 11:33:42 AM [INFO] weight_decay - 0.01
+04/13/2023 11:33:42 AM [INFO] dropout_rate - 0.1
+04/13/2023 11:33:42 AM [INFO] enable_scheduler - False
+04/13/2023 11:33:42 AM [INFO] warmup_steps - 0.01
+04/13/2023 11:33:42 AM [INFO] margin - 1.0
+04/13/2023 11:33:42 AM [INFO] corpus - gcdc
+04/13/2023 11:33:42 AM [INFO] sub_corpus - all
+04/13/2023 11:33:42 AM [INFO] max_seq_len - 512
+04/13/2023 11:33:42 AM [INFO] max_fact_count - 50
+04/13/2023 11:33:42 AM [INFO] max_fact_seq_len - 50
+04/13/2023 11:33:42 AM [INFO] permutation_count - 20
+04/13/2023 11:33:42 AM [INFO] with_replacement - 1
+04/13/2023 11:33:42 AM [INFO] train_dataset_count - 66469
+04/13/2023 11:33:42 AM [INFO] val_dataset_count - 16277
+04/13/2023 11:33:42 AM [INFO] test_dataset_count - None
+04/13/2023 11:33:42 AM [INFO] inverse_pra - 0
+04/13/2023 11:33:42 AM [INFO] task - sentence-ordering
+04/13/2023 11:33:42 AM [INFO] enable_kldiv - False
+04/13/2023 11:33:42 AM [INFO] label_smoothing - 0.1
+04/13/2023 11:33:42 AM [INFO] inference - False
+04/13/2023 11:33:42 AM [INFO] online_mode - 0
+04/13/2023 11:33:42 AM [INFO] logger_exp_name - gcdc-All-mtl-vanilla-sentence-ordering-roberta-base
+04/13/2023 11:33:42 AM [INFO] arch - mtl
+04/13/2023 11:33:42 AM [INFO] disable_mtl - 0
+04/13/2023 11:33:42 AM [INFO] mtl_base_arch - vanilla
+04/13/2023 11:33:42 AM [INFO] model_name - roberta-base
+04/13/2023 11:33:42 AM [INFO] tf2_model_name - roberta-base
+04/13/2023 11:33:42 AM [INFO] use_pretrained_tf2 - 0
+04/13/2023 11:33:42 AM [INFO] sentence_pooling - none
+04/13/2023 11:33:42 AM [INFO] freeze_emb_layer - False
+04/13/2023 11:33:42 AM [INFO] exp_count - 0
+04/13/2023 11:33:42 AM [INFO] fp16 - 0
+04/13/2023 11:33:42 AM [INFO] ------------------------------------------------------------
+04/13/2023 11:33:42 AM [DEBUG] initiating training process...
+04/13/2023 11:33:49 AM [DEBUG] ModelWrapper(
+  (doc_encoder): TransformerModel(
+    (tf2): RobertaModel(
+      (embeddings): RobertaEmbeddings(
+        (word_embeddings): Embedding(50265, 768, padding_idx=1)
+        (position_embeddings): Embedding(514, 768, padding_idx=1)
+        (token_type_embeddings): Embedding(1, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): RobertaEncoder(
+        (layer): ModuleList(
+          (0): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (1): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (2): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (3): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (4): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (5): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (6): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (7): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (8): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (9): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (10): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (11): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+    )
+  )
+  (task_head): PairWiseSentenceRanking(
+    (phi): Linear(in_features=768, out_features=1, bias=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (train_metric): Accuracy()
+  (val_metric): Accuracy()
+  (test_metric): Accuracy()
+  (te_task_head): TexClassificationHead(
+    (dense): Linear(in_features=768, out_features=768, bias=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+    (out_proj): Linear(in_features=768, out_features=2, bias=True)
+  )
+  (te_train_metric): Accuracy()
+  (te_val_metric): Accuracy()
+)
+04/13/2023 11:33:49 AM [INFO] Model has 124647939 trainable parameters
+04/13/2023 11:34:00 AM [DEBUG] about to start training loop...
+04/13/2023 11:34:05 AM [INFO] epoch : 0 - average_val_loss : 1.000617, overall_val_acc : 0.500000
+04/13/2023 01:24:31 PM [INFO] epoch : 0 - average_val_loss : 0.645569, overall_val_acc : 0.988312
+04/13/2023 01:24:31 PM [INFO] epoch : 0 - average_val_te_loss : 0.653940, overall_val_te_acc : 0.617329
+04/13/2023 01:24:47 PM [INFO] epoch : 0 - average_train_loss : 0.681634, overall_train_acc : 0.957268
+04/13/2023 01:24:47 PM [INFO] epoch : 0 - average_train_te_loss : 0.688130, overall_train_te_acc : 0.531941
+04/13/2023 03:15:20 PM [INFO] epoch : 1 - average_val_loss : 0.618184, overall_val_acc : 0.984812
+04/13/2023 03:15:20 PM [INFO] epoch : 1 - average_val_te_loss : 0.609253, overall_val_te_acc : 0.685921
+04/13/2023 03:15:20 PM [INFO] epoch : 1 - average_train_loss : 0.610386, overall_train_acc : 0.987121
+04/13/2023 03:15:20 PM [INFO] epoch : 1 - average_train_te_loss : 0.630840, overall_train_te_acc : 0.652873
+04/13/2023 05:04:33 PM [INFO] epoch : 2 - average_val_loss : 0.605802, overall_val_acc : 0.966812
+04/13/2023 05:04:33 PM [INFO] epoch : 2 - average_val_te_loss : 0.543022, overall_val_te_acc : 0.711191
+04/13/2023 05:04:33 PM [INFO] epoch : 2 - average_train_loss : 0.571644, overall_train_acc : 0.988903
+04/13/2023 05:04:33 PM [INFO] epoch : 2 - average_train_te_loss : 0.547434, overall_train_te_acc : 0.731217
+04/13/2023 06:54:12 PM [INFO] epoch : 3 - average_val_loss : 0.589868, overall_val_acc : 0.961375
+04/13/2023 06:54:12 PM [INFO] epoch : 3 - average_val_te_loss : 0.558526, overall_val_te_acc : 0.750903
+04/13/2023 06:54:12 PM [INFO] epoch : 3 - average_train_loss : 0.548397, overall_train_acc : 0.989622
+04/13/2023 06:54:12 PM [INFO] epoch : 3 - average_train_te_loss : 0.437855, overall_train_te_acc : 0.809160
+04/13/2023 08:42:33 PM [INFO] epoch : 4 - average_val_loss : 0.595131, overall_val_acc : 0.967375
+04/13/2023 08:42:33 PM [INFO] epoch : 4 - average_val_te_loss : 0.608550, overall_val_te_acc : 0.768953
+04/13/2023 08:42:34 PM [INFO] epoch : 4 - average_train_loss : 0.532881, overall_train_acc : 0.988856
+04/13/2023 08:42:34 PM [INFO] epoch : 4 - average_train_te_loss : 0.325953, overall_train_te_acc : 0.866211
+04/13/2023 08:42:34 PM [DEBUG] training done.
+05/04/2023 06:42:15 AM [INFO] featurizing the gcdc corpus: All for task: sentence-ordering with model architecture: mtl
+05/04/2023 06:42:18 AM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
+05/04/2023 06:42:18 AM [DEBUG] working on test dataset 
+05/04/2023 06:42:19 AM [DEBUG] <Done>
+05/04/2023 06:42:19 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 06:42:19 AM [INFO] single sentence doc count: 0, total doc count: 800, obtained permutation dataset count: 16000
+05/04/2023 06:42:19 AM [INFO] post-processing the dataset
+05/04/2023 06:42:19 AM [INFO] data preprocessed: 16000, sentences preprocessed: 32000
+05/04/2023 06:42:25 AM [INFO] featurizing the datasets..
+05/04/2023 06:42:25 AM [DEBUG] 16000 data instance processed. max sent_seq_length: 512
+05/04/2023 06:42:45 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 06:42:45 AM [INFO] label distribution in test dataset (total count: 16000)
+05/04/2023 06:42:45 AM [INFO] {1: 8000, -1: 8000}
+05/04/2023 06:42:45 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 06:42:45 AM [INFO] featurizing the textual entailment corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 06:42:49 AM [DEBUG] <<LOADING>> RTE dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/RTE
+05/04/2023 06:42:49 AM [DEBUG] working on train dataset 
+05/04/2023 06:42:49 AM [DEBUG] <Done>
+05/04/2023 06:42:49 AM [DEBUG] working on dev dataset 
+05/04/2023 06:42:49 AM [DEBUG] <Done>
+05/04/2023 06:42:49 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 06:43:12 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 06:43:12 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 06:43:12 AM [INFO] 
+command line argument captured ..
+05/04/2023 06:43:12 AM [INFO] ------------------------------------------------------------
+05/04/2023 06:43:12 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 06:43:12 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 06:43:12 AM [INFO] gpus - 1
+05/04/2023 06:43:12 AM [INFO] epochs - 10
+05/04/2023 06:43:12 AM [INFO] batch_size - 2
+05/04/2023 06:43:12 AM [INFO] learning_rate - 1e-06
+05/04/2023 06:43:12 AM [INFO] clip_grad_norm - 0.0
+05/04/2023 06:43:12 AM [INFO] weight_decay - 0.01
+05/04/2023 06:43:12 AM [INFO] dropout_rate - 0.1
+05/04/2023 06:43:12 AM [INFO] enable_scheduler - False
+05/04/2023 06:43:12 AM [INFO] warmup_steps - 0.01
+05/04/2023 06:43:12 AM [INFO] margin - 1.0
+05/04/2023 06:43:12 AM [INFO] corpus - gcdc
+05/04/2023 06:43:12 AM [INFO] sub_corpus - All
+05/04/2023 06:43:12 AM [INFO] max_seq_len - 512
+05/04/2023 06:43:12 AM [INFO] max_fact_count - 50
+05/04/2023 06:43:12 AM [INFO] max_fact_seq_len - 50
+05/04/2023 06:43:12 AM [INFO] permutation_count - 20
+05/04/2023 06:43:12 AM [INFO] with_replacement - 1
+05/04/2023 06:43:12 AM [INFO] train_dataset_count - None
+05/04/2023 06:43:12 AM [INFO] val_dataset_count - None
+05/04/2023 06:43:12 AM [INFO] test_dataset_count - 16000
+05/04/2023 06:43:12 AM [INFO] inverse_pra - 0
+05/04/2023 06:43:12 AM [INFO] task - sentence-ordering
+05/04/2023 06:43:12 AM [INFO] enable_kldiv - False
+05/04/2023 06:43:12 AM [INFO] label_smoothing - 0.1
+05/04/2023 06:43:12 AM [INFO] inference - True
+05/04/2023 06:43:12 AM [INFO] online_mode - 0
+05/04/2023 06:43:12 AM [INFO] logger_exp_name - gcdc-All-mtl-vanilla-sentence-ordering-roberta-base
+05/04/2023 06:43:12 AM [INFO] arch - mtl
+05/04/2023 06:43:12 AM [INFO] disable_mtl - 0
+05/04/2023 06:43:12 AM [INFO] mtl_base_arch - vanilla
+05/04/2023 06:43:12 AM [INFO] model_name - roberta-base
+05/04/2023 06:43:12 AM [INFO] tf2_model_name - roberta-base
+05/04/2023 06:43:12 AM [INFO] use_pretrained_tf2 - 0
+05/04/2023 06:43:12 AM [INFO] sentence_pooling - none
+05/04/2023 06:43:12 AM [INFO] freeze_emb_layer - True
+05/04/2023 06:43:12 AM [INFO] exp_count - 0
+05/04/2023 06:43:12 AM [INFO] fp16 - 0
+05/04/2023 06:43:12 AM [INFO] ------------------------------------------------------------
+05/04/2023 06:43:12 AM [DEBUG] initiating inference process...
+05/04/2023 06:43:17 AM [INFO] frozed embedding layer
+05/04/2023 06:43:17 AM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 06:43:35 AM [INFO] frozed embedding layer
+05/04/2023 06:43:35 AM [DEBUG] loaded model successfully !!!
+05/04/2023 06:43:35 AM [INFO] testing on dataset : gcdc ( sub_dataset All ) on task : sentence-ordering
+05/04/2023 06:50:41 AM [INFO] featurizing the gcdc corpus: All for task: sentence-ordering with model architecture: mtl
+05/04/2023 06:50:45 AM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
+05/04/2023 06:50:45 AM [DEBUG] working on test dataset 
+05/04/2023 06:50:45 AM [DEBUG] <Done>
+05/04/2023 06:50:45 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 06:50:45 AM [INFO] single sentence doc count: 0, total doc count: 800, obtained permutation dataset count: 16000
+05/04/2023 06:50:45 AM [INFO] post-processing the dataset
+05/04/2023 06:50:45 AM [INFO] data preprocessed: 16000, sentences preprocessed: 32000
+05/04/2023 06:50:52 AM [INFO] featurizing the datasets..
+05/04/2023 06:50:52 AM [DEBUG] 16000 data instance processed. max sent_seq_length: 512
+05/04/2023 06:51:13 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 06:51:13 AM [INFO] label distribution in test dataset (total count: 16000)
+05/04/2023 06:51:13 AM [INFO] {1: 8000, -1: 8000}
+05/04/2023 06:51:13 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 06:51:13 AM [INFO] featurizing the textual entailment corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 06:51:17 AM [DEBUG] <<LOADING>> RTE dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/RTE
+05/04/2023 06:51:17 AM [DEBUG] working on train dataset 
+05/04/2023 06:51:17 AM [DEBUG] <Done>
+05/04/2023 06:51:17 AM [DEBUG] working on dev dataset 
+05/04/2023 06:51:17 AM [DEBUG] <Done>
+05/04/2023 06:51:17 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 06:51:43 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 06:51:43 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 06:51:43 AM [INFO] 
+command line argument captured ..
+05/04/2023 06:51:43 AM [INFO] ------------------------------------------------------------
+05/04/2023 06:51:43 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 06:51:43 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 06:51:43 AM [INFO] gpus - 1
+05/04/2023 06:51:43 AM [INFO] epochs - 10
+05/04/2023 06:51:43 AM [INFO] batch_size - 2
+05/04/2023 06:51:43 AM [INFO] learning_rate - 1e-06
+05/04/2023 06:51:43 AM [INFO] clip_grad_norm - 0.0
+05/04/2023 06:51:43 AM [INFO] weight_decay - 0.01
+05/04/2023 06:51:43 AM [INFO] dropout_rate - 0.1
+05/04/2023 06:51:43 AM [INFO] enable_scheduler - False
+05/04/2023 06:51:43 AM [INFO] warmup_steps - 0.01
+05/04/2023 06:51:43 AM [INFO] margin - 1.0
+05/04/2023 06:51:43 AM [INFO] corpus - gcdc
+05/04/2023 06:51:43 AM [INFO] sub_corpus - All
+05/04/2023 06:51:43 AM [INFO] max_seq_len - 512
+05/04/2023 06:51:43 AM [INFO] max_fact_count - 50
+05/04/2023 06:51:43 AM [INFO] max_fact_seq_len - 50
+05/04/2023 06:51:43 AM [INFO] permutation_count - 20
+05/04/2023 06:51:43 AM [INFO] with_replacement - 1
+05/04/2023 06:51:43 AM [INFO] train_dataset_count - None
+05/04/2023 06:51:43 AM [INFO] val_dataset_count - None
+05/04/2023 06:51:43 AM [INFO] test_dataset_count - 16000
+05/04/2023 06:51:43 AM [INFO] inverse_pra - 0
+05/04/2023 06:51:43 AM [INFO] task - sentence-ordering
+05/04/2023 06:51:43 AM [INFO] enable_kldiv - False
+05/04/2023 06:51:43 AM [INFO] label_smoothing - 0.1
+05/04/2023 06:51:43 AM [INFO] inference - True
+05/04/2023 06:51:43 AM [INFO] online_mode - 0
+05/04/2023 06:51:43 AM [INFO] logger_exp_name - gcdc-All-mtl-vanilla-sentence-ordering-roberta-base
+05/04/2023 06:51:43 AM [INFO] arch - mtl
+05/04/2023 06:51:43 AM [INFO] disable_mtl - 0
+05/04/2023 06:51:43 AM [INFO] mtl_base_arch - vanilla
+05/04/2023 06:51:43 AM [INFO] model_name - roberta-base
+05/04/2023 06:51:43 AM [INFO] tf2_model_name - roberta-base
+05/04/2023 06:51:43 AM [INFO] use_pretrained_tf2 - 0
+05/04/2023 06:51:43 AM [INFO] sentence_pooling - none
+05/04/2023 06:51:43 AM [INFO] freeze_emb_layer - True
+05/04/2023 06:51:43 AM [INFO] exp_count - 0
+05/04/2023 06:51:43 AM [INFO] fp16 - 0
+05/04/2023 06:51:43 AM [INFO] ------------------------------------------------------------
+05/04/2023 06:51:43 AM [DEBUG] initiating inference process...
+05/04/2023 06:51:48 AM [INFO] frozed embedding layer
+05/04/2023 06:51:48 AM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 06:52:06 AM [INFO] frozed embedding layer
+05/04/2023 06:52:06 AM [DEBUG] loaded model successfully !!!
+05/04/2023 06:52:06 AM [INFO] testing on dataset : gcdc ( sub_dataset All ) on task : sentence-ordering
+05/04/2023 06:55:55 AM [INFO] featurizing the gcdc corpus: All for task: sentence-ordering with model architecture: mtl
+05/04/2023 06:55:59 AM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
+05/04/2023 06:55:59 AM [DEBUG] working on test dataset 
+05/04/2023 06:55:59 AM [DEBUG] <Done>
+05/04/2023 06:55:59 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 06:55:59 AM [INFO] single sentence doc count: 0, total doc count: 800, obtained permutation dataset count: 16000
+05/04/2023 06:55:59 AM [INFO] post-processing the dataset
+05/04/2023 06:55:59 AM [INFO] data preprocessed: 16000, sentences preprocessed: 32000
+05/04/2023 06:56:05 AM [INFO] featurizing the datasets..
+05/04/2023 06:56:05 AM [DEBUG] 16000 data instance processed. max sent_seq_length: 512
+05/04/2023 06:56:25 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 06:56:25 AM [INFO] label distribution in test dataset (total count: 16000)
+05/04/2023 06:56:25 AM [INFO] {1: 8000, -1: 8000}
+05/04/2023 06:56:25 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 06:56:25 AM [INFO] featurizing the textual entailment corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 06:56:29 AM [DEBUG] <<LOADING>> RTE dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/RTE
+05/04/2023 06:56:29 AM [DEBUG] working on train dataset 
+05/04/2023 06:56:29 AM [DEBUG] <Done>
+05/04/2023 06:56:29 AM [DEBUG] working on dev dataset 
+05/04/2023 06:56:29 AM [DEBUG] <Done>
+05/04/2023 06:56:29 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 06:56:53 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 06:56:53 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 06:56:54 AM [INFO] 
+command line argument captured ..
+05/04/2023 06:56:54 AM [INFO] ------------------------------------------------------------
+05/04/2023 06:56:54 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 06:56:54 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 06:56:54 AM [INFO] gpus - 1
+05/04/2023 06:56:54 AM [INFO] epochs - 10
+05/04/2023 06:56:54 AM [INFO] batch_size - 2
+05/04/2023 06:56:54 AM [INFO] learning_rate - 1e-06
+05/04/2023 06:56:54 AM [INFO] clip_grad_norm - 0.0
+05/04/2023 06:56:54 AM [INFO] weight_decay - 0.01
+05/04/2023 06:56:54 AM [INFO] dropout_rate - 0.1
+05/04/2023 06:56:54 AM [INFO] enable_scheduler - False
+05/04/2023 06:56:54 AM [INFO] warmup_steps - 0.01
+05/04/2023 06:56:54 AM [INFO] margin - 1.0
+05/04/2023 06:56:54 AM [INFO] corpus - gcdc
+05/04/2023 06:56:54 AM [INFO] sub_corpus - All
+05/04/2023 06:56:54 AM [INFO] max_seq_len - 512
+05/04/2023 06:56:54 AM [INFO] max_fact_count - 50
+05/04/2023 06:56:54 AM [INFO] max_fact_seq_len - 50
+05/04/2023 06:56:54 AM [INFO] permutation_count - 20
+05/04/2023 06:56:54 AM [INFO] with_replacement - 1
+05/04/2023 06:56:54 AM [INFO] train_dataset_count - None
+05/04/2023 06:56:54 AM [INFO] val_dataset_count - None
+05/04/2023 06:56:54 AM [INFO] test_dataset_count - 16000
+05/04/2023 06:56:54 AM [INFO] inverse_pra - 0
+05/04/2023 06:56:54 AM [INFO] task - sentence-ordering
+05/04/2023 06:56:54 AM [INFO] enable_kldiv - False
+05/04/2023 06:56:54 AM [INFO] label_smoothing - 0.1
+05/04/2023 06:56:54 AM [INFO] inference - True
+05/04/2023 06:56:54 AM [INFO] online_mode - 0
+05/04/2023 06:56:54 AM [INFO] logger_exp_name - gcdc-All-mtl-vanilla-sentence-ordering-roberta-base
+05/04/2023 06:56:54 AM [INFO] arch - mtl
+05/04/2023 06:56:54 AM [INFO] disable_mtl - 0
+05/04/2023 06:56:54 AM [INFO] mtl_base_arch - vanilla
+05/04/2023 06:56:54 AM [INFO] model_name - roberta-base
+05/04/2023 06:56:54 AM [INFO] tf2_model_name - roberta-base
+05/04/2023 06:56:54 AM [INFO] use_pretrained_tf2 - 0
+05/04/2023 06:56:54 AM [INFO] sentence_pooling - none
+05/04/2023 06:56:54 AM [INFO] freeze_emb_layer - True
+05/04/2023 06:56:54 AM [INFO] exp_count - 0
+05/04/2023 06:56:54 AM [INFO] fp16 - 0
+05/04/2023 06:56:54 AM [INFO] ------------------------------------------------------------
+05/04/2023 06:56:54 AM [DEBUG] initiating inference process...
+05/04/2023 06:56:58 AM [INFO] frozed embedding layer
+05/04/2023 06:56:58 AM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 06:57:04 AM [INFO] frozed embedding layer
+05/04/2023 06:57:04 AM [DEBUG] loaded model successfully !!!
+05/04/2023 06:57:04 AM [INFO] testing on dataset : gcdc ( sub_dataset All ) on task : sentence-ordering
+05/04/2023 07:04:21 AM [INFO] epoch : 0 - average_test_loss : 0.635175, overall_test_acc : 0.982813
+05/04/2023 07:04:21 AM [DEBUG] testing done !!!
+05/04/2023 07:41:29 AM [INFO] featurizing the gcdc corpus: All for task: sentence-ordering with model architecture: mtl
+05/04/2023 07:41:32 AM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
+05/04/2023 07:41:32 AM [DEBUG] working on test dataset 
+05/04/2023 07:41:32 AM [DEBUG] <Done>
+05/04/2023 07:41:32 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:41:33 AM [INFO] single sentence doc count: 0, total doc count: 800, obtained permutation dataset count: 16000
+05/04/2023 07:41:33 AM [INFO] post-processing the dataset
+05/04/2023 07:41:33 AM [INFO] data preprocessed: 16000, sentences preprocessed: 32000
+05/04/2023 07:41:38 AM [INFO] featurizing the datasets..
+05/04/2023 07:41:38 AM [DEBUG] 16000 data instance processed. max sent_seq_length: 512
+05/04/2023 07:41:57 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:41:57 AM [INFO] label distribution in test dataset (total count: 16000)
+05/04/2023 07:41:57 AM [INFO] {1: 8000, -1: 8000}
+05/04/2023 07:41:57 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:41:57 AM [INFO] featurizing the textual entailment corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 07:42:00 AM [DEBUG] <<LOADING>> RTE dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/RTE
+05/04/2023 07:42:00 AM [DEBUG] working on train dataset 
+05/04/2023 07:42:00 AM [DEBUG] <Done>
+05/04/2023 07:42:00 AM [DEBUG] working on dev dataset 
+05/04/2023 07:42:00 AM [DEBUG] <Done>
+05/04/2023 07:42:00 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:42:21 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:42:21 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:42:22 AM [INFO] 
+command line argument captured ..
+05/04/2023 07:42:22 AM [INFO] ------------------------------------------------------------
+05/04/2023 07:42:22 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 07:42:22 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 07:42:22 AM [INFO] gpus - 1
+05/04/2023 07:42:22 AM [INFO] epochs - 10
+05/04/2023 07:42:22 AM [INFO] batch_size - 2
+05/04/2023 07:42:22 AM [INFO] learning_rate - 1e-06
+05/04/2023 07:42:22 AM [INFO] clip_grad_norm - 0.0
+05/04/2023 07:42:22 AM [INFO] weight_decay - 0.01
+05/04/2023 07:42:22 AM [INFO] dropout_rate - 0.1
+05/04/2023 07:42:22 AM [INFO] enable_scheduler - False
+05/04/2023 07:42:22 AM [INFO] warmup_steps - 0.01
+05/04/2023 07:42:22 AM [INFO] margin - 1.0
+05/04/2023 07:42:22 AM [INFO] corpus - gcdc
+05/04/2023 07:42:22 AM [INFO] sub_corpus - All
+05/04/2023 07:42:22 AM [INFO] max_seq_len - 512
+05/04/2023 07:42:22 AM [INFO] max_fact_count - 50
+05/04/2023 07:42:22 AM [INFO] max_fact_seq_len - 50
+05/04/2023 07:42:22 AM [INFO] permutation_count - 20
+05/04/2023 07:42:22 AM [INFO] with_replacement - 1
+05/04/2023 07:42:22 AM [INFO] train_dataset_count - None
+05/04/2023 07:42:22 AM [INFO] val_dataset_count - None
+05/04/2023 07:42:22 AM [INFO] test_dataset_count - 16000
+05/04/2023 07:42:22 AM [INFO] inverse_pra - 0
+05/04/2023 07:42:22 AM [INFO] task - sentence-ordering
+05/04/2023 07:42:22 AM [INFO] enable_kldiv - False
+05/04/2023 07:42:22 AM [INFO] label_smoothing - 0.1
+05/04/2023 07:42:22 AM [INFO] inference - True
+05/04/2023 07:42:22 AM [INFO] online_mode - 0
+05/04/2023 07:42:22 AM [INFO] logger_exp_name - gcdc-All-mtl-vanilla-sentence-ordering-roberta-base
+05/04/2023 07:42:22 AM [INFO] arch - mtl
+05/04/2023 07:42:22 AM [INFO] disable_mtl - 0
+05/04/2023 07:42:22 AM [INFO] mtl_base_arch - vanilla
+05/04/2023 07:42:22 AM [INFO] model_name - roberta-base
+05/04/2023 07:42:22 AM [INFO] tf2_model_name - roberta-base
+05/04/2023 07:42:22 AM [INFO] use_pretrained_tf2 - 0
+05/04/2023 07:42:22 AM [INFO] sentence_pooling - none
+05/04/2023 07:42:22 AM [INFO] freeze_emb_layer - True
+05/04/2023 07:42:22 AM [INFO] exp_count - 0
+05/04/2023 07:42:22 AM [INFO] fp16 - 0
+05/04/2023 07:42:22 AM [INFO] ------------------------------------------------------------
+05/04/2023 07:42:22 AM [DEBUG] initiating inference process...
+05/04/2023 07:42:26 AM [INFO] frozed embedding layer
+05/04/2023 07:42:26 AM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 07:42:44 AM [INFO] frozed embedding layer
+05/04/2023 07:42:44 AM [DEBUG] loaded model successfully !!!
+05/04/2023 07:42:44 AM [INFO] testing on dataset : gcdc ( sub_dataset All ) on task : sentence-ordering
+05/04/2023 07:45:13 AM [INFO] featurizing the gcdc corpus: All for task: sentence-ordering with model architecture: mtl
+05/04/2023 07:45:16 AM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
+05/04/2023 07:45:16 AM [DEBUG] working on test dataset 
+05/04/2023 07:45:16 AM [DEBUG] <Done>
+05/04/2023 07:45:16 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:45:17 AM [INFO] single sentence doc count: 0, total doc count: 800, obtained permutation dataset count: 16000
+05/04/2023 07:45:17 AM [INFO] post-processing the dataset
+05/04/2023 07:45:17 AM [INFO] data preprocessed: 16000, sentences preprocessed: 32000
+05/04/2023 07:45:23 AM [INFO] featurizing the datasets..
+05/04/2023 07:45:23 AM [DEBUG] 16000 data instance processed. max sent_seq_length: 512
+05/04/2023 07:45:41 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:45:41 AM [INFO] label distribution in test dataset (total count: 16000)
+05/04/2023 07:45:41 AM [INFO] {1: 8000, -1: 8000}
+05/04/2023 07:45:41 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:45:42 AM [INFO] featurizing the textual entailment corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 07:45:45 AM [DEBUG] <<LOADING>> RTE dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/RTE
+05/04/2023 07:45:45 AM [DEBUG] working on train dataset 
+05/04/2023 07:45:45 AM [DEBUG] <Done>
+05/04/2023 07:45:45 AM [DEBUG] working on dev dataset 
+05/04/2023 07:45:45 AM [DEBUG] <Done>
+05/04/2023 07:45:45 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:46:06 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:46:06 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:46:07 AM [INFO] 
+command line argument captured ..
+05/04/2023 07:46:07 AM [INFO] ------------------------------------------------------------
+05/04/2023 07:46:07 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 07:46:07 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 07:46:07 AM [INFO] gpus - 1
+05/04/2023 07:46:07 AM [INFO] epochs - 10
+05/04/2023 07:46:07 AM [INFO] batch_size - 2
+05/04/2023 07:46:07 AM [INFO] learning_rate - 1e-06
+05/04/2023 07:46:07 AM [INFO] clip_grad_norm - 0.0
+05/04/2023 07:46:07 AM [INFO] weight_decay - 0.01
+05/04/2023 07:46:07 AM [INFO] dropout_rate - 0.1
+05/04/2023 07:46:07 AM [INFO] enable_scheduler - False
+05/04/2023 07:46:07 AM [INFO] warmup_steps - 0.01
+05/04/2023 07:46:07 AM [INFO] margin - 1.0
+05/04/2023 07:46:07 AM [INFO] corpus - gcdc
+05/04/2023 07:46:07 AM [INFO] sub_corpus - All
+05/04/2023 07:46:07 AM [INFO] max_seq_len - 512
+05/04/2023 07:46:07 AM [INFO] max_fact_count - 50
+05/04/2023 07:46:07 AM [INFO] max_fact_seq_len - 50
+05/04/2023 07:46:07 AM [INFO] permutation_count - 20
+05/04/2023 07:46:07 AM [INFO] with_replacement - 1
+05/04/2023 07:46:07 AM [INFO] train_dataset_count - None
+05/04/2023 07:46:07 AM [INFO] val_dataset_count - None
+05/04/2023 07:46:07 AM [INFO] test_dataset_count - 16000
+05/04/2023 07:46:07 AM [INFO] inverse_pra - 0
+05/04/2023 07:46:07 AM [INFO] task - sentence-ordering
+05/04/2023 07:46:07 AM [INFO] enable_kldiv - False
+05/04/2023 07:46:07 AM [INFO] label_smoothing - 0.1
+05/04/2023 07:46:07 AM [INFO] inference - True
+05/04/2023 07:46:07 AM [INFO] online_mode - 0
+05/04/2023 07:46:07 AM [INFO] logger_exp_name - gcdc-All-mtl-vanilla-sentence-ordering-roberta-base
+05/04/2023 07:46:07 AM [INFO] arch - mtl
+05/04/2023 07:46:07 AM [INFO] disable_mtl - 0
+05/04/2023 07:46:07 AM [INFO] mtl_base_arch - vanilla
+05/04/2023 07:46:07 AM [INFO] model_name - roberta-base
+05/04/2023 07:46:07 AM [INFO] tf2_model_name - roberta-base
+05/04/2023 07:46:07 AM [INFO] use_pretrained_tf2 - 0
+05/04/2023 07:46:07 AM [INFO] sentence_pooling - none
+05/04/2023 07:46:07 AM [INFO] freeze_emb_layer - True
+05/04/2023 07:46:07 AM [INFO] exp_count - 0
+05/04/2023 07:46:07 AM [INFO] fp16 - 0
+05/04/2023 07:46:07 AM [INFO] ------------------------------------------------------------
+05/04/2023 07:46:07 AM [DEBUG] initiating inference process...
+05/04/2023 07:46:11 AM [INFO] frozed embedding layer
+05/04/2023 07:46:11 AM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 07:46:16 AM [INFO] frozed embedding layer
+05/04/2023 07:46:16 AM [DEBUG] loaded model successfully !!!
+05/04/2023 07:46:16 AM [INFO] testing on dataset : gcdc ( sub_dataset All ) on task : sentence-ordering
+05/04/2023 07:53:25 AM [INFO] epoch : 0 - average_test_loss : 0.635175, overall_test_acc : 0.982813
+05/04/2023 07:53:25 AM [DEBUG] testing done !!!
+05/04/2023 07:54:30 AM [INFO] featurizing the gcdc corpus: All for task: sentence-ordering with model architecture: mtl
+05/04/2023 07:54:33 AM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
+05/04/2023 07:54:33 AM [DEBUG] working on test dataset 
+05/04/2023 07:54:33 AM [DEBUG] <Done>
+05/04/2023 07:54:33 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:54:33 AM [INFO] single sentence doc count: 0, total doc count: 800, obtained permutation dataset count: 16000
+05/04/2023 07:54:33 AM [INFO] post-processing the dataset
+05/04/2023 07:54:33 AM [INFO] data preprocessed: 16000, sentences preprocessed: 32000
+05/04/2023 07:54:40 AM [INFO] featurizing the datasets..
+05/04/2023 07:54:40 AM [DEBUG] 16000 data instance processed. max sent_seq_length: 512
+05/04/2023 07:55:02 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:55:02 AM [INFO] label distribution in test dataset (total count: 16000)
+05/04/2023 07:55:02 AM [INFO] {1: 8000, -1: 8000}
+05/04/2023 07:55:02 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:55:02 AM [INFO] featurizing the textual entailment corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 07:55:05 AM [DEBUG] <<LOADING>> RTE dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/RTE
+05/04/2023 07:55:05 AM [DEBUG] working on train dataset 
+05/04/2023 07:55:05 AM [DEBUG] <Done>
+05/04/2023 07:55:05 AM [DEBUG] working on dev dataset 
+05/04/2023 07:55:05 AM [DEBUG] <Done>
+05/04/2023 07:55:05 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:55:30 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:55:30 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:55:31 AM [INFO] 
+command line argument captured ..
+05/04/2023 07:55:31 AM [INFO] ------------------------------------------------------------
+05/04/2023 07:55:31 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 07:55:31 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 07:55:31 AM [INFO] gpus - 1
+05/04/2023 07:55:31 AM [INFO] epochs - 10
+05/04/2023 07:55:31 AM [INFO] batch_size - 2
+05/04/2023 07:55:31 AM [INFO] learning_rate - 1e-06
+05/04/2023 07:55:31 AM [INFO] clip_grad_norm - 0.0
+05/04/2023 07:55:31 AM [INFO] weight_decay - 0.01
+05/04/2023 07:55:31 AM [INFO] dropout_rate - 0.1
+05/04/2023 07:55:31 AM [INFO] enable_scheduler - False
+05/04/2023 07:55:31 AM [INFO] warmup_steps - 0.01
+05/04/2023 07:55:31 AM [INFO] margin - 1.0
+05/04/2023 07:55:31 AM [INFO] corpus - gcdc
+05/04/2023 07:55:31 AM [INFO] sub_corpus - All
+05/04/2023 07:55:31 AM [INFO] max_seq_len - 512
+05/04/2023 07:55:31 AM [INFO] max_fact_count - 50
+05/04/2023 07:55:31 AM [INFO] max_fact_seq_len - 50
+05/04/2023 07:55:31 AM [INFO] permutation_count - 20
+05/04/2023 07:55:31 AM [INFO] with_replacement - 1
+05/04/2023 07:55:31 AM [INFO] train_dataset_count - None
+05/04/2023 07:55:31 AM [INFO] val_dataset_count - None
+05/04/2023 07:55:31 AM [INFO] test_dataset_count - 16000
+05/04/2023 07:55:31 AM [INFO] inverse_pra - 0
+05/04/2023 07:55:31 AM [INFO] task - sentence-ordering
+05/04/2023 07:55:31 AM [INFO] enable_kldiv - False
+05/04/2023 07:55:31 AM [INFO] label_smoothing - 0.1
+05/04/2023 07:55:31 AM [INFO] inference - True
+05/04/2023 07:55:31 AM [INFO] online_mode - 0
+05/04/2023 07:55:31 AM [INFO] logger_exp_name - gcdc-All-mtl-vanilla-sentence-ordering-roberta-base
+05/04/2023 07:55:31 AM [INFO] arch - mtl
+05/04/2023 07:55:31 AM [INFO] disable_mtl - 0
+05/04/2023 07:55:31 AM [INFO] mtl_base_arch - vanilla
+05/04/2023 07:55:31 AM [INFO] model_name - roberta-base
+05/04/2023 07:55:31 AM [INFO] tf2_model_name - roberta-base
+05/04/2023 07:55:31 AM [INFO] use_pretrained_tf2 - 0
+05/04/2023 07:55:31 AM [INFO] sentence_pooling - none
+05/04/2023 07:55:31 AM [INFO] freeze_emb_layer - True
+05/04/2023 07:55:31 AM [INFO] exp_count - 0
+05/04/2023 07:55:31 AM [INFO] fp16 - 0
+05/04/2023 07:55:31 AM [INFO] ------------------------------------------------------------
+05/04/2023 07:55:31 AM [DEBUG] initiating inference process...
+05/04/2023 07:55:35 AM [INFO] frozed embedding layer
+05/04/2023 07:55:35 AM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 07:55:41 AM [INFO] frozed embedding layer
+05/04/2023 07:55:41 AM [DEBUG] loaded model successfully !!!
+05/04/2023 07:55:41 AM [INFO] testing on dataset : gcdc ( sub_dataset All ) on task : sentence-ordering
+05/04/2023 08:02:55 AM [INFO] epoch : 0 - average_test_loss : 0.635175, overall_test_acc : 0.982813
+05/04/2023 

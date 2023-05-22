@@ -1,0 +1,64 @@
+05/04/2023 10:11:00 AM [INFO] featurizing the gcdc corpus: Yahoo for task: 3-way-classification with model architecture: vanilla
+05/04/2023 10:11:03 AM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
+05/04/2023 10:11:03 AM [DEBUG] working on test dataset 
+05/04/2023 10:11:03 AM [DEBUG] <Done>
+05/04/2023 10:11:03 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 10:11:03 AM [INFO] post-processing the dataset
+05/04/2023 10:11:03 AM [INFO] data preprocessed: 200, sentences preprocessed: 200
+05/04/2023 10:11:04 AM [INFO] featurizing the datasets..
+05/04/2023 10:11:04 AM [DEBUG] 200 data instance processed. max sent_seq_length: 512
+05/04/2023 10:11:04 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 10:11:04 AM [INFO] label distribution in test dataset (total count: 200)
+05/04/2023 10:11:04 AM [INFO] {1: 41, 0: 82, 2: 77}
+05/04/2023 10:11:04 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 10:11:04 AM [INFO] 
+command line argument captured ..
+05/04/2023 10:11:04 AM [INFO] ------------------------------------------------------------
+05/04/2023 10:11:04 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 10:11:04 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-vanilla-3-way-classification-roberta-base/epoch=1.ckpt
+05/04/2023 10:11:04 AM [INFO] gpus - 1
+05/04/2023 10:11:04 AM [INFO] epochs - 10
+05/04/2023 10:11:04 AM [INFO] batch_size - 2
+05/04/2023 10:11:04 AM [INFO] learning_rate - 1e-06
+05/04/2023 10:11:04 AM [INFO] clip_grad_norm - 0.0
+05/04/2023 10:11:04 AM [INFO] weight_decay - 0.01
+05/04/2023 10:11:04 AM [INFO] dropout_rate - 0.1
+05/04/2023 10:11:04 AM [INFO] enable_scheduler - False
+05/04/2023 10:11:04 AM [INFO] warmup_steps - 0.01
+05/04/2023 10:11:04 AM [INFO] margin - 1.0
+05/04/2023 10:11:04 AM [INFO] corpus - gcdc
+05/04/2023 10:11:04 AM [INFO] sub_corpus - Yahoo
+05/04/2023 10:11:04 AM [INFO] max_seq_len - 512
+05/04/2023 10:11:04 AM [INFO] max_fact_count - 50
+05/04/2023 10:11:04 AM [INFO] max_fact_seq_len - 50
+05/04/2023 10:11:04 AM [INFO] permutation_count - 20
+05/04/2023 10:11:04 AM [INFO] with_replacement - 1
+05/04/2023 10:11:04 AM [INFO] train_dataset_count - None
+05/04/2023 10:11:04 AM [INFO] val_dataset_count - None
+05/04/2023 10:11:04 AM [INFO] test_dataset_count - 200
+05/04/2023 10:11:04 AM [INFO] inverse_pra - 0
+05/04/2023 10:11:04 AM [INFO] task - 3-way-classification
+05/04/2023 10:11:04 AM [INFO] enable_kldiv - False
+05/04/2023 10:11:04 AM [INFO] label_smoothing - 0.1
+05/04/2023 10:11:04 AM [INFO] inference - True
+05/04/2023 10:11:04 AM [INFO] online_mode - 0
+05/04/2023 10:11:04 AM [INFO] logger_exp_name - gcdc-Yahoo-vanilla-3-way-classification-roberta-base
+05/04/2023 10:11:04 AM [INFO] arch - vanilla
+05/04/2023 10:11:04 AM [INFO] disable_mtl - 0
+05/04/2023 10:11:04 AM [INFO] mtl_base_arch - vanilla
+05/04/2023 10:11:04 AM [INFO] model_name - roberta-base
+05/04/2023 10:11:04 AM [INFO] tf2_model_name - roberta-base
+05/04/2023 10:11:04 AM [INFO] use_pretrained_tf2 - 0
+05/04/2023 10:11:04 AM [INFO] sentence_pooling - none
+05/04/2023 10:11:04 AM [INFO] freeze_emb_layer - True
+05/04/2023 10:11:04 AM [INFO] exp_count - 0
+05/04/2023 10:11:04 AM [INFO] fp16 - 0
+05/04/2023 10:11:04 AM [INFO] ------------------------------------------------------------
+05/04/2023 10:11:04 AM [DEBUG] initiating inference process...
+05/04/2023 10:11:08 AM [INFO] frozed embedding layer
+05/04/2023 10:11:08 AM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-vanilla-3-way-classification-roberta-base/epoch=1.ckpt
+05/04/2023 10:11:14 AM [INFO] frozed embedding layer
+05/04/2023 10:11:14 AM [DEBUG] loaded model successfully !!!
+05/04/2023 10:11:14 AM [INFO] testing on dataset : gcdc ( sub_dataset Yahoo ) on task : 3-way-classification
+05/04/2023 10:11:24 AM [INFO] epoch : 0 - average_test_loss : 0.960211, overall_test_acc : 0.555000
+05/04/2023 10:11:24 AM [DEBUG] testing done !!!

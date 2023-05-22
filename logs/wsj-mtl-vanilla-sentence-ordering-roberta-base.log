@@ -1,0 +1,725 @@
+05/04/2023 04:29:36 AM [INFO] featurizing the wsj corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 04:29:39 AM [DEBUG] <<LOADING>> WSJ dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/WSJ
+05/04/2023 04:29:39 AM [DEBUG] working on train dataset 
+05/04/2023 04:29:39 AM [DEBUG] <Done>
+05/04/2023 04:29:39 AM [DEBUG] working on dev dataset 
+05/04/2023 04:29:40 AM [DEBUG] <Done>
+05/04/2023 04:29:40 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 04:29:40 AM [INFO] single sentence doc count: 21, total doc count: 1099, obtained permutation dataset count: 21560
+05/04/2023 04:29:40 AM [INFO] single sentence doc count: 4, total doc count: 400, obtained permutation dataset count: 7920
+05/04/2023 04:29:40 AM [INFO] post-processing the dataset
+05/04/2023 04:29:40 AM [INFO] data preprocessed: 21560, sentences preprocessed: 43120
+05/04/2023 04:29:58 AM [INFO] featurizing the datasets..
+05/04/2023 04:29:58 AM [DEBUG] 21560 data instance processed. max sent_seq_length: 512
+05/04/2023 04:30:22 AM [INFO] post-processing the dataset
+05/04/2023 04:30:22 AM [INFO] data preprocessed: 7920, sentences preprocessed: 15840
+05/04/2023 04:30:28 AM [INFO] featurizing the datasets..
+05/04/2023 04:30:28 AM [DEBUG] 7920 data instance processed. max sent_seq_length: 512
+05/04/2023 04:30:38 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 04:30:38 AM [INFO] label distribution in train dataset (total count: 21560)
+05/04/2023 04:30:38 AM [INFO] {1: 10780, -1: 10780}
+05/04/2023 04:30:38 AM [INFO] label distribution in dev dataset (total count: 7920)
+05/04/2023 04:30:38 AM [INFO] {1: 3960, -1: 3960}
+05/04/2023 04:30:38 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 04:30:38 AM [INFO] featurizing the textual entailment corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 04:30:40 AM [DEBUG] <<LOADING>> MNLI dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/MNLI
+05/04/2023 04:30:40 AM [DEBUG] working on train dataset 
+05/04/2023 04:30:40 AM [DEBUG] <Done>
+05/04/2023 04:30:40 AM [DEBUG] working on dev dataset 
+05/04/2023 04:30:40 AM [DEBUG] <Done>
+05/04/2023 04:30:40 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 04:30:46 AM [INFO] post-processing the dataset
+05/04/2023 04:30:46 AM [INFO] data preprocessed: 21560, sentences preprocessed: 43120
+05/04/2023 04:30:50 AM [INFO] featurizing the datasets..
+05/04/2023 04:30:50 AM [DEBUG] 21560 data instance processed. max sent_seq_length: 512
+05/04/2023 04:30:50 AM [INFO] post-processing the dataset
+05/04/2023 04:30:50 AM [INFO] data preprocessed: 6692, sentences preprocessed: 13384
+05/04/2023 04:30:52 AM [INFO] featurizing the datasets..
+05/04/2023 04:30:52 AM [DEBUG] 6692 data instance processed. max sent_seq_length: 512
+05/04/2023 04:31:56 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 04:31:56 AM [INFO] label distribution for train textual entailment dataset (total count: 21560)
+05/04/2023 04:31:56 AM [INFO] {1: 10421, 0: 11139}
+05/04/2023 04:31:56 AM [INFO] label distribution for dev textual entailment dataset (total count: 6692)
+05/04/2023 04:31:56 AM [INFO] {0: 3213, 1: 3479}
+05/04/2023 04:31:56 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 04:31:57 AM [INFO] 
+command line argument captured ..
+05/04/2023 04:31:57 AM [INFO] ------------------------------------------------------------
+05/04/2023 04:31:57 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 04:31:57 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints
+05/04/2023 04:31:57 AM [INFO] gpus - 1
+05/04/2023 04:31:57 AM [INFO] epochs - 2
+05/04/2023 04:31:57 AM [INFO] batch_size - 2
+05/04/2023 04:31:57 AM [INFO] learning_rate - 1e-06
+05/04/2023 04:31:57 AM [INFO] clip_grad_norm - 0.0
+05/04/2023 04:31:57 AM [INFO] weight_decay - 0.01
+05/04/2023 04:31:57 AM [INFO] dropout_rate - 0.1
+05/04/2023 04:31:57 AM [INFO] enable_scheduler - False
+05/04/2023 04:31:57 AM [INFO] warmup_steps - 0.01
+05/04/2023 04:31:57 AM [INFO] margin - 1.0
+05/04/2023 04:31:57 AM [INFO] corpus - wsj
+05/04/2023 04:31:57 AM [INFO] sub_corpus - all
+05/04/2023 04:31:57 AM [INFO] max_seq_len - 512
+05/04/2023 04:31:57 AM [INFO] max_fact_count - 50
+05/04/2023 04:31:57 AM [INFO] max_fact_seq_len - 50
+05/04/2023 04:31:57 AM [INFO] permutation_count - 20
+05/04/2023 04:31:57 AM [INFO] with_replacement - 1
+05/04/2023 04:31:57 AM [INFO] train_dataset_count - 43120
+05/04/2023 04:31:57 AM [INFO] val_dataset_count - 14612
+05/04/2023 04:31:57 AM [INFO] test_dataset_count - None
+05/04/2023 04:31:57 AM [INFO] inverse_pra - 0
+05/04/2023 04:31:57 AM [INFO] task - sentence-ordering
+05/04/2023 04:31:57 AM [INFO] enable_kldiv - False
+05/04/2023 04:31:57 AM [INFO] label_smoothing - 0.1
+05/04/2023 04:31:57 AM [INFO] inference - False
+05/04/2023 04:31:57 AM [INFO] online_mode - 0
+05/04/2023 04:31:57 AM [INFO] logger_exp_name - wsj-mtl-vanilla-sentence-ordering-roberta-base
+05/04/2023 04:31:57 AM [INFO] arch - mtl
+05/04/2023 04:31:57 AM [INFO] disable_mtl - 0
+05/04/2023 04:31:57 AM [INFO] mtl_base_arch - vanilla
+05/04/2023 04:31:57 AM [INFO] model_name - roberta-base
+05/04/2023 04:31:57 AM [INFO] tf2_model_name - roberta-base
+05/04/2023 04:31:57 AM [INFO] use_pretrained_tf2 - 0
+05/04/2023 04:31:57 AM [INFO] sentence_pooling - none
+05/04/2023 04:31:57 AM [INFO] freeze_emb_layer - False
+05/04/2023 04:31:57 AM [INFO] exp_count - 0
+05/04/2023 04:31:57 AM [INFO] fp16 - 0
+05/04/2023 04:31:57 AM [INFO] ------------------------------------------------------------
+05/04/2023 04:31:57 AM [DEBUG] initiating training process...
+05/04/2023 04:32:06 AM [DEBUG] ModelWrapper(
+  (doc_encoder): TransformerModel(
+    (tf2): RobertaModel(
+      (embeddings): RobertaEmbeddings(
+        (word_embeddings): Embedding(50265, 768, padding_idx=1)
+        (position_embeddings): Embedding(514, 768, padding_idx=1)
+        (token_type_embeddings): Embedding(1, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): RobertaEncoder(
+        (layer): ModuleList(
+          (0): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (1): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (2): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (3): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (4): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (5): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (6): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (7): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (8): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (9): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (10): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (11): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+    )
+  )
+  (task_head): PairWiseSentenceRanking(
+    (phi): Linear(in_features=768, out_features=1, bias=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (train_metric): Accuracy()
+  (val_metric): Accuracy()
+  (test_metric): Accuracy()
+  (te_task_head): TexClassificationHead(
+    (dense): Linear(in_features=768, out_features=768, bias=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+    (out_proj): Linear(in_features=768, out_features=2, bias=True)
+  )
+  (te_train_metric): Accuracy()
+  (te_val_metric): Accuracy()
+)
+05/04/2023 04:32:06 AM [INFO] Model has 124647939 trainable parameters
+05/04/2023 04:32:15 AM [DEBUG] about to start training loop...
+05/04/2023 04:32:20 AM [INFO] epoch : 0 - average_val_loss : 1.382079, overall_val_acc : 0.000000
+05/04/2023 04:32:20 AM [INFO] epoch : 0 - average_val_te_loss : 0.763538, overall_val_te_acc : 0.000000
+05/04/2023 05:35:28 AM [INFO] epoch : 0 - average_val_loss : 0.412560, overall_val_acc : 0.987752
+05/04/2023 05:35:28 AM [INFO] epoch : 0 - average_val_te_loss : 0.236171, overall_val_te_acc : 0.909743
+05/04/2023 05:35:44 AM [INFO] epoch : 0 - average_train_loss : 0.581845, overall_train_acc : 0.940909
+05/04/2023 05:35:45 AM [INFO] epoch : 0 - average_train_te_loss : 0.412682, overall_train_te_acc : 0.793367
+05/04/2023 08:20:19 AM [INFO] featurizing the wsj corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 08:20:22 AM [DEBUG] <<LOADING>> WSJ dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/WSJ
+05/04/2023 08:20:22 AM [DEBUG] working on test dataset 
+05/04/2023 08:20:22 AM [DEBUG] <Done>
+05/04/2023 08:20:22 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:20:23 AM [INFO] single sentence doc count: 10, total doc count: 1100, obtained permutation dataset count: 21800
+05/04/2023 08:20:23 AM [INFO] post-processing the dataset
+05/04/2023 08:20:23 AM [INFO] data preprocessed: 21800, sentences preprocessed: 43600
+05/04/2023 08:20:42 AM [INFO] featurizing the datasets..
+05/04/2023 08:20:42 AM [DEBUG] 21800 data instance processed. max sent_seq_length: 512
+05/04/2023 08:21:10 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:21:10 AM [INFO] label distribution in test dataset (total count: 21800)
+05/04/2023 08:21:10 AM [INFO] {1: 10900, -1: 10900}
+05/04/2023 08:21:10 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:21:10 AM [INFO] featurizing the textual entailment corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 08:21:13 AM [DEBUG] <<LOADING>> MNLI dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/MNLI
+05/04/2023 08:21:13 AM [DEBUG] working on train dataset 
+05/04/2023 08:21:13 AM [DEBUG] <Done>
+05/04/2023 08:21:13 AM [DEBUG] working on dev dataset 
+05/04/2023 08:21:13 AM [DEBUG] <Done>
+05/04/2023 08:21:13 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:22:13 AM [INFO] featurizing the wsj corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 08:22:16 AM [DEBUG] <<LOADING>> WSJ dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/WSJ
+05/04/2023 08:22:16 AM [DEBUG] working on test dataset 
+05/04/2023 08:22:17 AM [DEBUG] <Done>
+05/04/2023 08:22:17 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:22:17 AM [INFO] single sentence doc count: 10, total doc count: 1100, obtained permutation dataset count: 21800
+05/04/2023 08:22:17 AM [INFO] post-processing the dataset
+05/04/2023 08:22:17 AM [INFO] data preprocessed: 21800, sentences preprocessed: 43600
+05/04/2023 08:22:36 AM [INFO] featurizing the datasets..
+05/04/2023 08:22:36 AM [DEBUG] 21800 data instance processed. max sent_seq_length: 512
+05/04/2023 08:23:36 AM [INFO] featurizing the wsj corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 08:23:44 AM [INFO] featurizing the wsj corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 08:23:48 AM [DEBUG] <<LOADING>> WSJ dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/WSJ
+05/04/2023 08:23:48 AM [DEBUG] working on test dataset 
+05/04/2023 08:23:48 AM [DEBUG] <Done>
+05/04/2023 08:23:48 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:23:48 AM [INFO] single sentence doc count: 10, total doc count: 1100, obtained permutation dataset count: 21800
+05/04/2023 08:23:49 AM [INFO] post-processing the dataset
+05/04/2023 08:23:49 AM [INFO] data preprocessed: 21800, sentences preprocessed: 43600
+05/04/2023 08:24:07 AM [INFO] featurizing the datasets..
+05/04/2023 08:24:07 AM [DEBUG] 21800 data instance processed. max sent_seq_length: 512
+05/04/2023 08:24:35 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:24:35 AM [INFO] label distribution in test dataset (total count: 21800)
+05/04/2023 08:24:35 AM [INFO] {1: 10900, -1: 10900}
+05/04/2023 08:24:35 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:24:35 AM [INFO] featurizing the textual entailment corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 08:24:39 AM [DEBUG] <<LOADING>> MNLI dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/MNLI
+05/04/2023 08:24:39 AM [DEBUG] working on train dataset 
+05/04/2023 08:24:39 AM [DEBUG] <Done>
+05/04/2023 08:24:39 AM [DEBUG] working on dev dataset 
+05/04/2023 08:24:39 AM [DEBUG] <Done>
+05/04/2023 08:24:39 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:25:12 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:25:12 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:25:12 AM [INFO] 
+command line argument captured ..
+05/04/2023 08:25:12 AM [INFO] ------------------------------------------------------------
+05/04/2023 08:25:12 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 08:25:12 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/wsj-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 08:25:12 AM [INFO] gpus - 1
+05/04/2023 08:25:12 AM [INFO] epochs - 10
+05/04/2023 08:25:12 AM [INFO] batch_size - 2
+05/04/2023 08:25:12 AM [INFO] learning_rate - 1e-06
+05/04/2023 08:25:12 AM [INFO] clip_grad_norm - 0.0
+05/04/2023 08:25:12 AM [INFO] weight_decay - 0.01
+05/04/2023 08:25:12 AM [INFO] dropout_rate - 0.1
+05/04/2023 08:25:12 AM [INFO] enable_scheduler - False
+05/04/2023 08:25:12 AM [INFO] warmup_steps - 0.01
+05/04/2023 08:25:12 AM [INFO] margin - 1.0
+05/04/2023 08:25:12 AM [INFO] corpus - wsj
+05/04/2023 08:25:12 AM [INFO] sub_corpus - all
+05/04/2023 08:25:12 AM [INFO] max_seq_len - 512
+05/04/2023 08:25:12 AM [INFO] max_fact_count - 50
+05/04/2023 08:25:12 AM [INFO] max_fact_seq_len - 50
+05/04/2023 08:25:12 AM [INFO] permutation_count - 20
+05/04/2023 08:25:12 AM [INFO] with_replacement - 1
+05/04/2023 08:25:12 AM [INFO] train_dataset_count - None
+05/04/2023 08:25:12 AM [INFO] val_dataset_count - None
+05/04/2023 08:25:12 AM [INFO] test_dataset_count - 21800
+05/04/2023 08:25:12 AM [INFO] inverse_pra - 0
+05/04/2023 08:25:12 AM [INFO] task - sentence-ordering
+05/04/2023 08:25:12 AM [INFO] enable_kldiv - False
+05/04/2023 08:25:12 AM [INFO] label_smoothing - 0.1
+05/04/2023 08:25:12 AM [INFO] inference - True
+05/04/2023 08:25:12 AM [INFO] online_mode - 0
+05/04/2023 08:25:12 AM [INFO] logger_exp_name - wsj-mtl-vanilla-sentence-ordering-roberta-base
+05/04/2023 08:25:12 AM [INFO] arch - mtl
+05/04/2023 08:25:12 AM [INFO] disable_mtl - 0
+05/04/2023 08:25:12 AM [INFO] mtl_base_arch - vanilla
+05/04/2023 08:25:12 AM [INFO] model_name - roberta-base
+05/04/2023 08:25:12 AM [INFO] tf2_model_name - roberta-base
+05/04/2023 08:25:12 AM [INFO] use_pretrained_tf2 - 0
+05/04/2023 08:25:12 AM [INFO] sentence_pooling - none
+05/04/2023 08:25:12 AM [INFO] freeze_emb_layer - True
+05/04/2023 08:25:12 AM [INFO] exp_count - 0
+05/04/2023 08:25:12 AM [INFO] fp16 - 0
+05/04/2023 08:25:12 AM [INFO] ------------------------------------------------------------
+05/04/2023 08:25:12 AM [DEBUG] initiating inference process...
+05/04/2023 08:25:17 AM [INFO] frozed embedding layer
+05/04/2023 08:25:17 AM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/wsj-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 08:25:34 AM [INFO] frozed embedding layer
+05/04/2023 08:25:35 AM [DEBUG] loaded model successfully !!!
+05/04/2023 08:25:35 AM [INFO] testing on dataset : wsj ( sub_dataset all ) on task : sentence-ordering
+05/04/2023 08:39:09 AM [INFO] featurizing the wsj corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 08:39:12 AM [DEBUG] <<LOADING>> WSJ dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/WSJ
+05/04/2023 08:39:12 AM [DEBUG] working on test dataset 
+05/04/2023 08:39:12 AM [DEBUG] <Done>
+05/04/2023 08:39:12 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:39:13 AM [INFO] single sentence doc count: 10, total doc count: 1100, obtained permutation dataset count: 21800
+05/04/2023 08:39:13 AM [INFO] post-processing the dataset
+05/04/2023 08:39:13 AM [INFO] data preprocessed: 21800, sentences preprocessed: 43600
+05/04/2023 08:39:33 AM [INFO] featurizing the datasets..
+05/04/2023 08:39:33 AM [DEBUG] 21800 data instance processed. max sent_seq_length: 512
+05/04/2023 08:40:01 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:40:01 AM [INFO] label distribution in test dataset (total count: 21800)
+05/04/2023 08:40:01 AM [INFO] {1: 10900, -1: 10900}
+05/04/2023 08:40:01 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:40:01 AM [INFO] featurizing the textual entailment corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 08:40:05 AM [DEBUG] <<LOADING>> MNLI dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/MNLI
+05/04/2023 08:40:05 AM [DEBUG] working on train dataset 
+05/04/2023 08:40:05 AM [DEBUG] <Done>
+05/04/2023 08:40:05 AM [DEBUG] working on dev dataset 
+05/04/2023 08:40:05 AM [DEBUG] <Done>
+05/04/2023 08:40:05 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:40:36 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:40:36 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:40:37 AM [INFO] 
+command line argument captured ..
+05/04/2023 08:40:37 AM [INFO] ------------------------------------------------------------
+05/04/2023 08:40:37 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 08:40:37 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/wsj-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 08:40:37 AM [INFO] gpus - 1
+05/04/2023 08:40:37 AM [INFO] epochs - 10
+05/04/2023 08:40:37 AM [INFO] batch_size - 2
+05/04/2023 08:40:37 AM [INFO] learning_rate - 1e-06
+05/04/2023 08:40:37 AM [INFO] clip_grad_norm - 0.0
+05/04/2023 08:40:37 AM [INFO] weight_decay - 0.01
+05/04/2023 08:40:37 AM [INFO] dropout_rate - 0.1
+05/04/2023 08:40:37 AM [INFO] enable_scheduler - False
+05/04/2023 08:40:37 AM [INFO] warmup_steps - 0.01
+05/04/2023 08:40:37 AM [INFO] margin - 1.0
+05/04/2023 08:40:37 AM [INFO] corpus - wsj
+05/04/2023 08:40:37 AM [INFO] sub_corpus - all
+05/04/2023 08:40:37 AM [INFO] max_seq_len - 512
+05/04/2023 08:40:37 AM [INFO] max_fact_count - 50
+05/04/2023 08:40:37 AM [INFO] max_fact_seq_len - 50
+05/04/2023 08:40:37 AM [INFO] permutation_count - 20
+05/04/2023 08:40:37 AM [INFO] with_replacement - 1
+05/04/2023 08:40:37 AM [INFO] train_dataset_count - None
+05/04/2023 08:40:37 AM [INFO] val_dataset_count - None
+05/04/2023 08:40:37 AM [INFO] test_dataset_count - 21800
+05/04/2023 08:40:37 AM [INFO] inverse_pra - 0
+05/04/2023 08:40:37 AM [INFO] task - sentence-ordering
+05/04/2023 08:40:37 AM [INFO] enable_kldiv - False
+05/04/2023 08:40:37 AM [INFO] label_smoothing - 0.1
+05/04/2023 08:40:37 AM [INFO] inference - True
+05/04/2023 08:40:37 AM [INFO] online_mode - 0
+05/04/2023 08:40:37 AM [INFO] logger_exp_name - wsj-mtl-vanilla-sentence-ordering-roberta-base
+05/04/2023 08:40:37 AM [INFO] arch - mtl
+05/04/2023 08:40:37 AM [INFO] disable_mtl - 0
+05/04/2023 08:40:37 AM [INFO] mtl_base_arch - vanilla
+05/04/2023 08:40:37 AM [INFO] model_name - roberta-base
+05/04/2023 08:40:37 AM [INFO] tf2_model_name - roberta-base
+05/04/2023 08:40:37 AM [INFO] use_pretrained_tf2 - 0
+05/04/2023 08:40:37 AM [INFO] sentence_pooling - none
+05/04/2023 08:40:37 AM [INFO] freeze_emb_layer - True
+05/04/2023 08:40:37 AM [INFO] exp_count - 0
+05/04/2023 08:40:37 AM [INFO] fp16 - 0
+05/04/2023 08:40:37 AM [INFO] ------------------------------------------------------------
+05/04/2023 08:40:37 AM [DEBUG] initiating inference process...
+05/04/2023 08:40:41 AM [INFO] frozed embedding layer
+05/04/2023 08:40:41 AM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/wsj-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 08:40:59 AM [INFO] frozed embedding layer
+05/04/2023 08:40:59 AM [DEBUG] loaded model successfully !!!
+05/04/2023 08:40:59 AM [INFO] testing on dataset : wsj ( sub_dataset all ) on task : sentence-ordering
+05/04/2023 08:42:03 AM [INFO] featurizing the wsj corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 08:42:07 AM [DEBUG] <<LOADING>> WSJ dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/WSJ
+05/04/2023 08:42:07 AM [DEBUG] working on test dataset 
+05/04/2023 08:42:07 AM [DEBUG] <Done>
+05/04/2023 08:42:07 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:42:07 AM [INFO] single sentence doc count: 10, total doc count: 1100, obtained permutation dataset count: 21800
+05/04/2023 08:42:07 AM [INFO] post-processing the dataset
+05/04/2023 08:42:07 AM [INFO] data preprocessed: 21800, sentences preprocessed: 43600
+05/04/2023 08:42:27 AM [INFO] featurizing the datasets..
+05/04/2023 08:42:27 AM [DEBUG] 21800 data instance processed. max sent_seq_length: 512
+05/04/2023 08:42:54 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:42:54 AM [INFO] label distribution in test dataset (total count: 21800)
+05/04/2023 08:42:54 AM [INFO] {1: 10900, -1: 10900}
+05/04/2023 08:42:54 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:42:54 AM [INFO] featurizing the textual entailment corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 08:42:58 AM [DEBUG] <<LOADING>> MNLI dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/MNLI
+05/04/2023 08:42:58 AM [DEBUG] working on train dataset 
+05/04/2023 08:42:58 AM [DEBUG] <Done>
+05/04/2023 08:42:58 AM [DEBUG] working on dev dataset 
+05/04/2023 08:42:58 AM [DEBUG] <Done>
+05/04/2023 08:42:58 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:43:30 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:43:30 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:43:30 AM [INFO] 
+command line argument captured ..
+05/04/2023 08:43:30 AM [INFO] ------------------------------------------------------------
+05/04/2023 08:43:30 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 08:43:30 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/wsj-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 08:43:30 AM [INFO] gpus - 1
+05/04/2023 08:43:30 AM [INFO] epochs - 10
+05/04/2023 08:43:30 AM [INFO] batch_size - 2
+05/04/2023 08:43:30 AM [INFO] learning_rate - 1e-06
+05/04/2023 08:43:30 AM [INFO] clip_grad_norm - 0.0
+05/04/2023 08:43:30 AM [INFO] weight_decay - 0.01
+05/04/2023 08:43:30 AM [INFO] dropout_rate - 0.1
+05/04/2023 08:43:30 AM [INFO] enable_scheduler - False
+05/04/2023 08:43:30 AM [INFO] warmup_steps - 0.01
+05/04/2023 08:43:30 AM [INFO] margin - 1.0
+05/04/2023 08:43:30 AM [INFO] corpus - wsj
+05/04/2023 08:43:30 AM [INFO] sub_corpus - all
+05/04/2023 08:43:30 AM [INFO] max_seq_len - 512
+05/04/2023 08:43:30 AM [INFO] max_fact_count - 50
+05/04/2023 08:43:30 AM [INFO] max_fact_seq_len - 50
+05/04/2023 08:43:30 AM [INFO] permutation_count - 20
+05/04/2023 08:43:30 AM [INFO] with_replacement - 1
+05/04/2023 08:43:30 AM [INFO] train_dataset_count - None
+05/04/2023 08:43:30 AM [INFO] val_dataset_count - None
+05/04/2023 08:43:30 AM [INFO] test_dataset_count - 21800
+05/04/2023 08:43:30 AM [INFO] inverse_pra - 0
+05/04/2023 08:43:30 AM [INFO] task - sentence-ordering
+05/04/2023 08:43:30 AM [INFO] enable_kldiv - False
+05/04/2023 08:43:30 AM [INFO] label_smoothing - 0.1
+05/04/2023 08:43:30 AM [INFO] inference - True
+05/04/2023 08:43:30 AM [INFO] online_mode - 0
+05/04/2023 08:43:30 AM [INFO] logger_exp_name - wsj-mtl-vanilla-sentence-ordering-roberta-base
+05/04/2023 08:43:30 AM [INFO] arch - mtl
+05/04/2023 08:43:30 AM [INFO] disable_mtl - 0
+05/04/2023 08:43:30 AM [INFO] mtl_base_arch - vanilla
+05/04/2023 08:43:30 AM [INFO] model_name - roberta-base
+05/04/2023 08:43:30 AM [INFO] tf2_model_name - roberta-base
+05/04/2023 08:43:30 AM [INFO] use_pretrained_tf2 - 0
+05/04/2023 08:43:30 AM [INFO] sentence_pooling - none
+05/04/2023 08:43:30 AM [INFO] freeze_emb_layer - True
+05/04/2023 08:43:30 AM [INFO] exp_count - 0
+05/04/2023 08:43:30 AM [INFO] fp16 - 0
+05/04/2023 08:43:30 AM [INFO] ------------------------------------------------------------
+05/04/2023 08:43:30 AM [DEBUG] initiating inference process...
+05/04/2023 08:43:34 AM [INFO] frozed embedding layer
+05/04/2023 08:43:34 AM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/wsj-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 08:43:39 AM [INFO] frozed embedding layer
+05/04/2023 08:43:39 AM [DEBUG] loaded model successfully !!!
+05/04/2023 08:43:39 AM [INFO] testing on dataset : wsj ( sub_dataset all ) on task : sentence-ordering
+05/04/2023 08:51:31 AM [INFO] featurizing the wsj corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 08:51:34 AM [DEBUG] <<LOADING>> WSJ dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/WSJ
+05/04/2023 08:51:34 AM [DEBUG] working on test dataset 
+05/04/2023 08:51:35 AM [DEBUG] <Done>
+05/04/2023 08:51:35 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:51:36 AM [INFO] single sentence doc count: 10, total doc count: 1100, obtained permutation dataset count: 21800
+05/04/2023 08:51:36 AM [INFO] post-processing the dataset
+05/04/2023 08:51:36 AM [INFO] data preprocessed: 21800, sentences preprocessed: 43600
+05/04/2023 08:52:03 AM [INFO] featurizing the datasets..
+05/04/2023 08:52:03 AM [DEBUG] 21800 data instance processed. max sent_seq_length: 512
+05/04/2023 08:52:31 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:52:31 AM [INFO] label distribution in test dataset (total count: 21800)
+05/04/2023 08:52:31 AM [INFO] {1: 10900, -1: 10900}
+05/04/2023 08:52:31 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:52:31 AM [INFO] featurizing the textual entailment corpus for task: sentence-ordering with model architecture: mtl
+05/04/2023 08:52:34 AM [DEBUG] <<LOADING>> MNLI dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/MNLI
+05/04/2023 08:52:34 AM [DEBUG] working on train dataset 
+05/04/2023 08:52:35 AM [DEBUG] <Done>
+05/04/2023 08:52:35 AM [DEBUG] working on dev dataset 
+05/04/2023 08:52:35 AM [DEBUG] <Done>
+05/04/2023 08:52:35 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:53:07 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:53:07 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 08:53:08 AM [INFO] 
+command line argument captured ..
+05/04/2023 08:53:08 AM [INFO] ------------------------------------------------------------
+05/04/2023 08:53:08 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 08:53:08 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/wsj-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 08:53:08 AM [INFO] gpus - 1
+05/04/2023 08:53:08 AM [INFO] epochs - 10
+05/04/2023 08:53:08 AM [INFO] batch_size - 2
+05/04/2023 08:53:08 AM [INFO] learning_rate - 1e-06
+05/04/2023 08:53:08 AM [INFO] clip_grad_norm - 0.0
+05/04/2023 08:53:08 AM [INFO] weight_decay - 0.01
+05/04/2023 08:53:08 AM [INFO] dropout_rate - 0.1
+05/04/2023 08:53:08 AM [INFO] enable_scheduler - False
+05/04/2023 08:53:08 AM [INFO] warmup_steps - 0.01
+05/04/2023 08:53:08 AM [INFO] margin - 1.0
+05/04/2023 08:53:08 AM [INFO] corpus - wsj
+05/04/2023 08:53:08 AM [INFO] sub_corpus - all
+05/04/2023 08:53:08 AM [INFO] max_seq_len - 512
+05/04/2023 08:53:08 AM [INFO] max_fact_count - 50
+05/04/2023 08:53:08 AM [INFO] max_fact_seq_len - 50
+05/04/2023 08:53:08 AM [INFO] permutation_count - 20
+05/04/2023 08:53:08 AM [INFO] with_replacement - 1
+05/04/2023 08:53:08 AM [INFO] train_dataset_count - None
+05/04/2023 08:53:08 AM [INFO] val_dataset_count - None
+05/04/2023 08:53:08 AM [INFO] test_dataset_count - 21800
+05/04/2023 08:53:08 AM [INFO] inverse_pra - 0
+05/04/2023 08:53:08 AM [INFO] task - sentence-ordering
+05/04/2023 08:53:08 AM [INFO] enable_kldiv - False
+05/04/2023 08:53:08 AM [INFO] label_smoothing - 0.1
+05/04/2023 08:53:08 AM [INFO] inference - True
+05/04/2023 08:53:08 AM [INFO] online_mode - 0
+05/04/2023 08:53:08 AM [INFO] logger_exp_name - wsj-mtl-vanilla-sentence-ordering-roberta-base
+05/04/2023 08:53:08 AM [INFO] arch - mtl
+05/04/2023 08:53:08 AM [INFO] disable_mtl - 0
+05/04/2023 08:53:08 AM [INFO] mtl_base_arch - vanilla
+05/04/2023 08:53:08 AM [INFO] model_name - roberta-base
+05/04/2023 08:53:08 AM [INFO] tf2_model_name - roberta-base
+05/04/2023 08:53:08 AM [INFO] use_pretrained_tf2 - 0
+05/04/2023 08:53:08 AM [INFO] sentence_pooling - none
+05/04/2023 08:53:08 AM [INFO] freeze_emb_layer - True
+05/04/2023 08:53:08 AM [INFO] exp_count - 0
+05/04/2023 08:53:08 AM [INFO] fp16 - 0
+05/04/2023 08:53:08 AM [INFO] ------------------------------------------------------------
+05/04/2023 08:53:08 AM [DEBUG] initiating inference process...
+05/04/2023 08:53:13 AM [INFO] frozed embedding layer
+05/04/2023 08:53:13 AM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/wsj-mtl-vanilla-sentence-ordering-roberta-base/epoch=0.ckpt
+05/04/2023 08:53:30 AM [INFO] frozed embedding layer
+05/04/2023 08:53:30 AM [DEBUG] loaded model successfully !!!
+05/04/2023 08:53:30 AM [INFO] testing on dataset : wsj ( sub_dataset all ) on task : sentence-ordering
+05/04/2023 09:03:29 AM [INFO] epoch : 0 - average_test_loss : 0.681784, overall_test_acc : 0.984128
+05/04/2023 09:03:29 AM [DEBUG] testing done !!!

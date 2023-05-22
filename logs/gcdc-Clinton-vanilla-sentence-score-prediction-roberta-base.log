@@ -1,0 +1,61 @@
+05/04/2023 09:16:28 AM [INFO] featurizing the gcdc corpus: Clinton for task: sentence-score-prediction with model architecture: vanilla
+05/04/2023 09:16:32 AM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
+05/04/2023 09:16:32 AM [DEBUG] working on test dataset 
+05/04/2023 09:16:32 AM [DEBUG] <Done>
+05/04/2023 09:16:32 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 09:16:32 AM [INFO] post-processing the dataset
+05/04/2023 09:16:32 AM [INFO] data preprocessed: 200, sentences preprocessed: 200
+05/04/2023 09:16:32 AM [INFO] featurizing the datasets..
+05/04/2023 09:16:32 AM [DEBUG] 200 data instance processed. max sent_seq_length: 512
+05/04/2023 09:16:32 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 09:16:32 AM [INFO] 
+command line argument captured ..
+05/04/2023 09:16:32 AM [INFO] ------------------------------------------------------------
+05/04/2023 09:16:32 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 09:16:32 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-vanilla-sentence-score-prediction-roberta-base/epoch=1.ckpt
+05/04/2023 09:16:32 AM [INFO] gpus - 1
+05/04/2023 09:16:32 AM [INFO] epochs - 10
+05/04/2023 09:16:32 AM [INFO] batch_size - 2
+05/04/2023 09:16:32 AM [INFO] learning_rate - 1e-06
+05/04/2023 09:16:32 AM [INFO] clip_grad_norm - 0.0
+05/04/2023 09:16:32 AM [INFO] weight_decay - 0.01
+05/04/2023 09:16:32 AM [INFO] dropout_rate - 0.1
+05/04/2023 09:16:32 AM [INFO] enable_scheduler - False
+05/04/2023 09:16:32 AM [INFO] warmup_steps - 0.01
+05/04/2023 09:16:32 AM [INFO] margin - 1.0
+05/04/2023 09:16:32 AM [INFO] corpus - gcdc
+05/04/2023 09:16:32 AM [INFO] sub_corpus - Clinton
+05/04/2023 09:16:32 AM [INFO] max_seq_len - 512
+05/04/2023 09:16:32 AM [INFO] max_fact_count - 50
+05/04/2023 09:16:32 AM [INFO] max_fact_seq_len - 50
+05/04/2023 09:16:32 AM [INFO] permutation_count - 20
+05/04/2023 09:16:32 AM [INFO] with_replacement - 1
+05/04/2023 09:16:32 AM [INFO] train_dataset_count - None
+05/04/2023 09:16:32 AM [INFO] val_dataset_count - None
+05/04/2023 09:16:32 AM [INFO] test_dataset_count - 200
+05/04/2023 09:16:32 AM [INFO] inverse_pra - 0
+05/04/2023 09:16:32 AM [INFO] task - sentence-score-prediction
+05/04/2023 09:16:32 AM [INFO] enable_kldiv - False
+05/04/2023 09:16:32 AM [INFO] label_smoothing - 0.1
+05/04/2023 09:16:32 AM [INFO] inference - True
+05/04/2023 09:16:32 AM [INFO] online_mode - 0
+05/04/2023 09:16:32 AM [INFO] logger_exp_name - gcdc-Clinton-vanilla-sentence-score-prediction-roberta-base
+05/04/2023 09:16:32 AM [INFO] arch - vanilla
+05/04/2023 09:16:32 AM [INFO] disable_mtl - 0
+05/04/2023 09:16:32 AM [INFO] mtl_base_arch - vanilla
+05/04/2023 09:16:32 AM [INFO] model_name - roberta-base
+05/04/2023 09:16:32 AM [INFO] tf2_model_name - roberta-base
+05/04/2023 09:16:32 AM [INFO] use_pretrained_tf2 - 0
+05/04/2023 09:16:32 AM [INFO] sentence_pooling - none
+05/04/2023 09:16:32 AM [INFO] freeze_emb_layer - True
+05/04/2023 09:16:32 AM [INFO] exp_count - 0
+05/04/2023 09:16:32 AM [INFO] fp16 - 0
+05/04/2023 09:16:32 AM [INFO] ------------------------------------------------------------
+05/04/2023 09:16:32 AM [DEBUG] initiating inference process...
+05/04/2023 09:16:37 AM [INFO] frozed embedding layer
+05/04/2023 09:16:37 AM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-vanilla-sentence-score-prediction-roberta-base/epoch=1.ckpt
+05/04/2023 09:16:43 AM [INFO] frozed embedding layer
+05/04/2023 09:16:43 AM [DEBUG] loaded model successfully !!!
+05/04/2023 09:16:43 AM [INFO] testing on dataset : gcdc ( sub_dataset Clinton ) on task : sentence-score-prediction
+05/04/2023 09:16:51 AM [INFO] epoch : 0 - average_test_loss : 0.304726, overall_test_spearman_score : 0.622873
+05/04/2023 09:16:51 AM [DEBUG] testing done !!!

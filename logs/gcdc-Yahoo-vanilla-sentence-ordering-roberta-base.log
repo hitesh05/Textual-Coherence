@@ -1,0 +1,250 @@
+03/15/2023 08:37:23 PM [INFO] featurizing the gcdc corpus: Yahoo for task: sentence-ordering with model architecture: vanilla
+03/15/2023 08:37:27 PM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
+03/15/2023 08:37:27 PM [DEBUG] working on test dataset 
+03/15/2023 08:37:28 PM [DEBUG] <Done>
+03/15/2023 08:37:28 PM [DEBUG] ------------------------------------------------------------
+03/15/2023 08:37:28 PM [INFO] single sentence doc count: 0, total doc count: 200, obtained permutation dataset count: 4000
+03/15/2023 08:37:28 PM [INFO] post-processing the dataset
+03/15/2023 08:37:28 PM [INFO] data preprocessed: 4000, sentences preprocessed: 8000
+03/15/2023 08:37:29 PM [INFO] featurizing the datasets..
+03/15/2023 08:37:29 PM [DEBUG] 4000 data instance processed. max sent_seq_length: 512
+03/15/2023 08:37:34 PM [DEBUG] ------------------------------------------------------------
+03/15/2023 08:37:34 PM [INFO] label distribution in test dataset (total count: 4000)
+03/15/2023 08:37:34 PM [INFO] {1: 2000, -1: 2000}
+03/15/2023 08:37:34 PM [DEBUG] ------------------------------------------------------------
+03/15/2023 08:37:34 PM [INFO] 
+command line argument captured ..
+03/15/2023 08:37:34 PM [INFO] ------------------------------------------------------------
+03/15/2023 08:37:34 PM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+03/15/2023 08:37:34 PM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints
+03/15/2023 08:37:34 PM [INFO] gpus - 1
+03/15/2023 08:37:34 PM [INFO] epochs - 10
+03/15/2023 08:37:34 PM [INFO] batch_size - 2
+03/15/2023 08:37:34 PM [INFO] learning_rate - 1e-06
+03/15/2023 08:37:34 PM [INFO] clip_grad_norm - 0.0
+03/15/2023 08:37:34 PM [INFO] weight_decay - 0.01
+03/15/2023 08:37:34 PM [INFO] dropout_rate - 0.1
+03/15/2023 08:37:34 PM [INFO] enable_scheduler - False
+03/15/2023 08:37:34 PM [INFO] warmup_steps - 0.01
+03/15/2023 08:37:34 PM [INFO] margin - 1.0
+03/15/2023 08:37:34 PM [INFO] corpus - gcdc
+03/15/2023 08:37:34 PM [INFO] sub_corpus - Yahoo
+03/15/2023 08:37:34 PM [INFO] max_seq_len - 512
+03/15/2023 08:37:34 PM [INFO] max_fact_count - 50
+03/15/2023 08:37:34 PM [INFO] max_fact_seq_len - 50
+03/15/2023 08:37:34 PM [INFO] permutation_count - 20
+03/15/2023 08:37:34 PM [INFO] with_replacement - 1
+03/15/2023 08:37:34 PM [INFO] train_dataset_count - None
+03/15/2023 08:37:34 PM [INFO] val_dataset_count - None
+03/15/2023 08:37:34 PM [INFO] test_dataset_count - 4000
+03/15/2023 08:37:34 PM [INFO] inverse_pra - 0
+03/15/2023 08:37:34 PM [INFO] task - sentence-ordering
+03/15/2023 08:37:34 PM [INFO] enable_kldiv - False
+03/15/2023 08:37:34 PM [INFO] label_smoothing - 0.1
+03/15/2023 08:37:34 PM [INFO] inference - True
+03/15/2023 08:37:34 PM [INFO] online_mode - 0
+03/15/2023 08:37:34 PM [INFO] logger_exp_name - gcdc-Yahoo-vanilla-sentence-ordering-roberta-base
+03/15/2023 08:37:34 PM [INFO] arch - vanilla
+03/15/2023 08:37:34 PM [INFO] disable_mtl - 0
+03/15/2023 08:37:34 PM [INFO] mtl_base_arch - vanilla
+03/15/2023 08:37:34 PM [INFO] model_name - roberta-base
+03/15/2023 08:37:34 PM [INFO] tf2_model_name - roberta-base
+03/15/2023 08:37:34 PM [INFO] use_pretrained_tf2 - 0
+03/15/2023 08:37:34 PM [INFO] sentence_pooling - none
+03/15/2023 08:37:34 PM [INFO] freeze_emb_layer - True
+03/15/2023 08:37:34 PM [INFO] exp_count - 0
+03/15/2023 08:37:34 PM [INFO] fp16 - 0
+03/15/2023 08:37:34 PM [INFO] ------------------------------------------------------------
+03/15/2023 08:37:34 PM [DEBUG] initiating inference process...
+03/15/2023 08:37:42 PM [INFO] frozed embedding layer
+03/15/2023 08:37:42 PM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints
+03/15/2023 08:39:48 PM [INFO] featurizing the gcdc corpus: Yahoo for task: sentence-ordering with model architecture: vanilla
+03/15/2023 08:39:51 PM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
+03/15/2023 08:39:51 PM [DEBUG] working on test dataset 
+03/15/2023 08:39:51 PM [DEBUG] <Done>
+03/15/2023 08:39:51 PM [DEBUG] ------------------------------------------------------------
+03/15/2023 08:39:51 PM [INFO] single sentence doc count: 0, total doc count: 200, obtained permutation dataset count: 4000
+03/15/2023 08:39:51 PM [INFO] post-processing the dataset
+03/15/2023 08:39:51 PM [INFO] data preprocessed: 4000, sentences preprocessed: 8000
+03/15/2023 08:39:52 PM [INFO] featurizing the datasets..
+03/15/2023 08:39:52 PM [DEBUG] 4000 data instance processed. max sent_seq_length: 512
+03/15/2023 08:39:57 PM [DEBUG] ------------------------------------------------------------
+03/15/2023 08:39:57 PM [INFO] label distribution in test dataset (total count: 4000)
+03/15/2023 08:39:57 PM [INFO] {1: 2000, -1: 2000}
+03/15/2023 08:39:57 PM [DEBUG] ------------------------------------------------------------
+03/15/2023 08:39:57 PM [INFO] 
+command line argument captured ..
+03/15/2023 08:39:57 PM [INFO] ------------------------------------------------------------
+03/15/2023 08:39:57 PM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+03/15/2023 08:39:57 PM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints
+03/15/2023 08:39:57 PM [INFO] gpus - 1
+03/15/2023 08:39:57 PM [INFO] epochs - 10
+03/15/2023 08:39:57 PM [INFO] batch_size - 2
+03/15/2023 08:39:57 PM [INFO] learning_rate - 1e-06
+03/15/2023 08:39:57 PM [INFO] clip_grad_norm - 0.0
+03/15/2023 08:39:57 PM [INFO] weight_decay - 0.01
+03/15/2023 08:39:57 PM [INFO] dropout_rate - 0.1
+03/15/2023 08:39:57 PM [INFO] enable_scheduler - False
+03/15/2023 08:39:57 PM [INFO] warmup_steps - 0.01
+03/15/2023 08:39:57 PM [INFO] margin - 1.0
+03/15/2023 08:39:57 PM [INFO] corpus - gcdc
+03/15/2023 08:39:57 PM [INFO] sub_corpus - Yahoo
+03/15/2023 08:39:57 PM [INFO] max_seq_len - 512
+03/15/2023 08:39:57 PM [INFO] max_fact_count - 50
+03/15/2023 08:39:57 PM [INFO] max_fact_seq_len - 50
+03/15/2023 08:39:57 PM [INFO] permutation_count - 20
+03/15/2023 08:39:57 PM [INFO] with_replacement - 1
+03/15/2023 08:39:57 PM [INFO] train_dataset_count - None
+03/15/2023 08:39:57 PM [INFO] val_dataset_count - None
+03/15/2023 08:39:57 PM [INFO] test_dataset_count - 4000
+03/15/2023 08:39:57 PM [INFO] inverse_pra - 0
+03/15/2023 08:39:57 PM [INFO] task - sentence-ordering
+03/15/2023 08:39:57 PM [INFO] enable_kldiv - False
+03/15/2023 08:39:57 PM [INFO] label_smoothing - 0.1
+03/15/2023 08:39:57 PM [INFO] inference - True
+03/15/2023 08:39:57 PM [INFO] online_mode - 0
+03/15/2023 08:39:57 PM [INFO] logger_exp_name - gcdc-Yahoo-vanilla-sentence-ordering-roberta-base
+03/15/2023 08:39:57 PM [INFO] arch - vanilla
+03/15/2023 08:39:57 PM [INFO] disable_mtl - 0
+03/15/2023 08:39:57 PM [INFO] mtl_base_arch - vanilla
+03/15/2023 08:39:57 PM [INFO] model_name - roberta-base
+03/15/2023 08:39:57 PM [INFO] tf2_model_name - roberta-base
+03/15/2023 08:39:57 PM [INFO] use_pretrained_tf2 - 0
+03/15/2023 08:39:57 PM [INFO] sentence_pooling - none
+03/15/2023 08:39:57 PM [INFO] freeze_emb_layer - True
+03/15/2023 08:39:57 PM [INFO] exp_count - 0
+03/15/2023 08:39:57 PM [INFO] fp16 - 0
+03/15/2023 08:39:57 PM [INFO] ------------------------------------------------------------
+03/15/2023 08:39:57 PM [DEBUG] initiating inference process...
+03/15/2023 08:40:02 PM [INFO] frozed embedding layer
+03/15/2023 08:40:02 PM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints
+03/15/2023 08:42:24 PM [INFO] featurizing the gcdc corpus: Yahoo for task: sentence-ordering with model architecture: vanilla
+03/15/2023 08:42:28 PM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
+03/15/2023 08:42:28 PM [DEBUG] working on test dataset 
+03/15/2023 08:42:28 PM [DEBUG] <Done>
+03/15/2023 08:42:28 PM [DEBUG] ------------------------------------------------------------
+03/15/2023 08:42:28 PM [INFO] single sentence doc count: 0, total doc count: 200, obtained permutation dataset count: 4000
+03/15/2023 08:42:28 PM [INFO] post-processing the dataset
+03/15/2023 08:42:28 PM [INFO] data preprocessed: 4000, sentences preprocessed: 8000
+03/15/2023 08:42:29 PM [INFO] featurizing the datasets..
+03/15/2023 08:42:29 PM [DEBUG] 4000 data instance processed. max sent_seq_length: 512
+03/15/2023 08:42:33 PM [DEBUG] ------------------------------------------------------------
+03/15/2023 08:42:33 PM [INFO] label distribution in test dataset (total count: 4000)
+03/15/2023 08:42:33 PM [INFO] {1: 2000, -1: 2000}
+03/15/2023 08:42:33 PM [DEBUG] ------------------------------------------------------------
+03/15/2023 08:42:33 PM [INFO] 
+command line argument captured ..
+03/15/2023 08:42:33 PM [INFO] ------------------------------------------------------------
+03/15/2023 08:42:33 PM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+03/15/2023 08:42:33 PM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/model.ckpt
+03/15/2023 08:42:33 PM [INFO] gpus - 1
+03/15/2023 08:42:33 PM [INFO] epochs - 10
+03/15/2023 08:42:33 PM [INFO] batch_size - 2
+03/15/2023 08:42:33 PM [INFO] learning_rate - 1e-06
+03/15/2023 08:42:33 PM [INFO] clip_grad_norm - 0.0
+03/15/2023 08:42:33 PM [INFO] weight_decay - 0.01
+03/15/2023 08:42:33 PM [INFO] dropout_rate - 0.1
+03/15/2023 08:42:33 PM [INFO] enable_scheduler - False
+03/15/2023 08:42:33 PM [INFO] warmup_steps - 0.01
+03/15/2023 08:42:33 PM [INFO] margin - 1.0
+03/15/2023 08:42:33 PM [INFO] corpus - gcdc
+03/15/2023 08:42:33 PM [INFO] sub_corpus - Yahoo
+03/15/2023 08:42:33 PM [INFO] max_seq_len - 512
+03/15/2023 08:42:33 PM [INFO] max_fact_count - 50
+03/15/2023 08:42:33 PM [INFO] max_fact_seq_len - 50
+03/15/2023 08:42:33 PM [INFO] permutation_count - 20
+03/15/2023 08:42:33 PM [INFO] with_replacement - 1
+03/15/2023 08:42:33 PM [INFO] train_dataset_count - None
+03/15/2023 08:42:33 PM [INFO] val_dataset_count - None
+03/15/2023 08:42:33 PM [INFO] test_dataset_count - 4000
+03/15/2023 08:42:33 PM [INFO] inverse_pra - 0
+03/15/2023 08:42:33 PM [INFO] task - sentence-ordering
+03/15/2023 08:42:33 PM [INFO] enable_kldiv - False
+03/15/2023 08:42:33 PM [INFO] label_smoothing - 0.1
+03/15/2023 08:42:33 PM [INFO] inference - True
+03/15/2023 08:42:33 PM [INFO] online_mode - 0
+03/15/2023 08:42:33 PM [INFO] logger_exp_name - gcdc-Yahoo-vanilla-sentence-ordering-roberta-base
+03/15/2023 08:42:33 PM [INFO] arch - vanilla
+03/15/2023 08:42:33 PM [INFO] disable_mtl - 0
+03/15/2023 08:42:33 PM [INFO] mtl_base_arch - vanilla
+03/15/2023 08:42:33 PM [INFO] model_name - roberta-base
+03/15/2023 08:42:33 PM [INFO] tf2_model_name - roberta-base
+03/15/2023 08:42:33 PM [INFO] use_pretrained_tf2 - 0
+03/15/2023 08:42:33 PM [INFO] sentence_pooling - none
+03/15/2023 08:42:33 PM [INFO] freeze_emb_layer - True
+03/15/2023 08:42:33 PM [INFO] exp_count - 0
+03/15/2023 08:42:33 PM [INFO] fp16 - 0
+03/15/2023 08:42:33 PM [INFO] ------------------------------------------------------------
+03/15/2023 08:42:33 PM [DEBUG] initiating inference process...
+03/15/2023 08:42:38 PM [INFO] frozed embedding layer
+03/15/2023 08:42:38 PM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/model.ckpt
+03/15/2023 08:42:55 PM [INFO] frozed embedding layer
+03/15/2023 08:42:55 PM [DEBUG] loaded model successfully !!!
+03/15/2023 08:42:55 PM [INFO] testing on dataset : gcdc ( sub_dataset Yahoo ) on task : sentence-ordering
+03/15/2023 08:46:08 PM [INFO] epoch : 0 - average_test_loss : 1.064832, overall_test_acc : 0.945000
+03/15/2023 08:46:08 PM [DEBUG] testing done !!!
+05/04/2023 07:44:02 PM [INFO] featurizing the gcdc corpus: Yahoo for task: sentence-ordering with model architecture: vanilla
+05/04/2023 07:44:06 PM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
+05/04/2023 07:44:06 PM [DEBUG] working on test dataset 
+05/04/2023 07:44:06 PM [DEBUG] <Done>
+05/04/2023 07:44:06 PM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:44:06 PM [INFO] single sentence doc count: 0, total doc count: 200, obtained permutation dataset count: 4000
+05/04/2023 07:44:06 PM [INFO] post-processing the dataset
+05/04/2023 07:44:06 PM [INFO] data preprocessed: 4000, sentences preprocessed: 8000
+05/04/2023 07:44:07 PM [INFO] featurizing the datasets..
+05/04/2023 07:44:07 PM [DEBUG] 4000 data instance processed. max sent_seq_length: 512
+05/04/2023 07:44:12 PM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:44:12 PM [INFO] label distribution in test dataset (total count: 4000)
+05/04/2023 07:44:12 PM [INFO] {1: 2000, -1: 2000}
+05/04/2023 07:44:12 PM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:44:12 PM [INFO] 
+command line argument captured ..
+05/04/2023 07:44:12 PM [INFO] ------------------------------------------------------------
+05/04/2023 07:44:12 PM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 07:44:12 PM [INFO] checkpoint_path - /home2/devesh.marwah/model.ckpt
+05/04/2023 07:44:12 PM [INFO] gpus - 1
+05/04/2023 07:44:12 PM [INFO] epochs - 10
+05/04/2023 07:44:12 PM [INFO] batch_size - 2
+05/04/2023 07:44:12 PM [INFO] learning_rate - 1e-06
+05/04/2023 07:44:12 PM [INFO] clip_grad_norm - 0.0
+05/04/2023 07:44:12 PM [INFO] weight_decay - 0.01
+05/04/2023 07:44:12 PM [INFO] dropout_rate - 0.1
+05/04/2023 07:44:12 PM [INFO] enable_scheduler - False
+05/04/2023 07:44:12 PM [INFO] warmup_steps - 0.01
+05/04/2023 07:44:12 PM [INFO] margin - 1.0
+05/04/2023 07:44:12 PM [INFO] corpus - gcdc
+05/04/2023 07:44:12 PM [INFO] sub_corpus - Yahoo
+05/04/2023 07:44:12 PM [INFO] max_seq_len - 512
+05/04/2023 07:44:12 PM [INFO] max_fact_count - 50
+05/04/2023 07:44:12 PM [INFO] max_fact_seq_len - 50
+05/04/2023 07:44:12 PM [INFO] permutation_count - 20
+05/04/2023 07:44:12 PM [INFO] with_replacement - 1
+05/04/2023 07:44:12 PM [INFO] train_dataset_count - None
+05/04/2023 07:44:12 PM [INFO] val_dataset_count - None
+05/04/2023 07:44:12 PM [INFO] test_dataset_count - 4000
+05/04/2023 07:44:12 PM [INFO] inverse_pra - 0
+05/04/2023 07:44:12 PM [INFO] task - sentence-ordering
+05/04/2023 07:44:12 PM [INFO] enable_kldiv - False
+05/04/2023 07:44:12 PM [INFO] label_smoothing - 0.1
+05/04/2023 07:44:12 PM [INFO] inference - True
+05/04/2023 07:44:12 PM [INFO] online_mode - 0
+05/04/2023 07:44:12 PM [INFO] logger_exp_name - gcdc-Yahoo-vanilla-sentence-ordering-roberta-base
+05/04/2023 07:44:12 PM [INFO] arch - vanilla
+05/04/2023 07:44:12 PM [INFO] disable_mtl - 0
+05/04/2023 07:44:12 PM [INFO] mtl_base_arch - vanilla
+05/04/2023 07:44:12 PM [INFO] model_name - roberta-base
+05/04/2023 07:44:12 PM [INFO] tf2_model_name - roberta-base
+05/04/2023 07:44:12 PM [INFO] use_pretrained_tf2 - 0
+05/04/2023 07:44:12 PM [INFO] sentence_pooling - none
+05/04/2023 07:44:12 PM [INFO] freeze_emb_layer - True
+05/04/2023 07:44:12 PM [INFO] exp_count - 0
+05/04/2023 07:44:12 PM [INFO] fp16 - 0
+05/04/2023 07:44:12 PM [INFO] ------------------------------------------------------------
+05/04/2023 07:44:12 PM [DEBUG] initiating inference process...
+05/04/2023 07:44:15 PM [INFO] frozed embedding layer
+05/04/2023 07:44:15 PM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/model.ckpt
+05/04/2023 07:44:32 PM [INFO] frozed embedding layer
+05/04/2023 07:44:32 PM [DEBUG] loaded model successfully !!!
+05/04/2023 07:44:32 PM [INFO] testing on dataset : gcdc ( sub_dataset Yahoo ) on task : sentence-ordering
+05/04/2023 07:46:24 PM [INFO] epoch : 0 - average_test_loss : 1.070835, overall_test_acc : 0.958250
+05/04/2023 07:46:24 PM [DEBUG] testing done !!!

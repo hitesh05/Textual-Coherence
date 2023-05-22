@@ -1,0 +1,500 @@
+05/04/2023 09:58:19 AM [INFO] featurizing the gcdc corpus: all for task: 3-way-classification with model architecture: vanilla
+05/04/2023 09:58:21 AM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
+05/04/2023 09:58:21 AM [DEBUG] working on train dataset 
+05/04/2023 09:58:22 AM [DEBUG] <Done>
+05/04/2023 09:58:22 AM [DEBUG] working on dev dataset 
+05/04/2023 09:58:22 AM [DEBUG] <Done>
+05/04/2023 09:58:22 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 09:58:22 AM [INFO] post-processing the dataset
+05/04/2023 09:58:22 AM [INFO] data preprocessed: 3200, sentences preprocessed: 3200
+05/04/2023 09:58:22 AM [INFO] featurizing the datasets..
+05/04/2023 09:58:22 AM [DEBUG] 3200 data instance processed. max sent_seq_length: 512
+05/04/2023 09:58:24 AM [INFO] post-processing the dataset
+05/04/2023 09:58:24 AM [INFO] data preprocessed: 800, sentences preprocessed: 800
+05/04/2023 09:58:24 AM [INFO] featurizing the datasets..
+05/04/2023 09:58:24 AM [DEBUG] 800 data instance processed. max sent_seq_length: 512
+05/04/2023 09:58:25 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 09:58:25 AM [INFO] label distribution in train dataset (total count: 3200)
+05/04/2023 09:58:25 AM [INFO] {2: 1520, 0: 1047, 1: 633}
+05/04/2023 09:58:25 AM [INFO] label distribution in dev dataset (total count: 800)
+05/04/2023 09:58:25 AM [INFO] {2: 379, 0: 262, 1: 159}
+05/04/2023 09:58:25 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 09:58:25 AM [INFO] 
+command line argument captured ..
+05/04/2023 09:58:25 AM [INFO] ------------------------------------------------------------
+05/04/2023 09:58:25 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 09:58:25 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints
+05/04/2023 09:58:25 AM [INFO] gpus - 1
+05/04/2023 09:58:25 AM [INFO] epochs - 2
+05/04/2023 09:58:25 AM [INFO] batch_size - 4
+05/04/2023 09:58:25 AM [INFO] learning_rate - 1e-06
+05/04/2023 09:58:25 AM [INFO] clip_grad_norm - 0.0
+05/04/2023 09:58:25 AM [INFO] weight_decay - 0.01
+05/04/2023 09:58:25 AM [INFO] dropout_rate - 0.1
+05/04/2023 09:58:25 AM [INFO] enable_scheduler - False
+05/04/2023 09:58:25 AM [INFO] warmup_steps - 0.01
+05/04/2023 09:58:25 AM [INFO] margin - 1.0
+05/04/2023 09:58:25 AM [INFO] corpus - gcdc
+05/04/2023 09:58:25 AM [INFO] sub_corpus - all
+05/04/2023 09:58:25 AM [INFO] max_seq_len - 512
+05/04/2023 09:58:25 AM [INFO] max_fact_count - 50
+05/04/2023 09:58:25 AM [INFO] max_fact_seq_len - 50
+05/04/2023 09:58:25 AM [INFO] permutation_count - 20
+05/04/2023 09:58:25 AM [INFO] with_replacement - 1
+05/04/2023 09:58:25 AM [INFO] train_dataset_count - 3200
+05/04/2023 09:58:25 AM [INFO] val_dataset_count - 800
+05/04/2023 09:58:25 AM [INFO] test_dataset_count - None
+05/04/2023 09:58:25 AM [INFO] inverse_pra - 0
+05/04/2023 09:58:25 AM [INFO] task - 3-way-classification
+05/04/2023 09:58:25 AM [INFO] enable_kldiv - False
+05/04/2023 09:58:25 AM [INFO] label_smoothing - 0.1
+05/04/2023 09:58:25 AM [INFO] inference - False
+05/04/2023 09:58:25 AM [INFO] online_mode - 0
+05/04/2023 09:58:25 AM [INFO] logger_exp_name - gcdc-All-vanilla-3-way-classification-roberta-base
+05/04/2023 09:58:25 AM [INFO] arch - vanilla
+05/04/2023 09:58:25 AM [INFO] disable_mtl - 0
+05/04/2023 09:58:25 AM [INFO] mtl_base_arch - vanilla
+05/04/2023 09:58:25 AM [INFO] model_name - roberta-base
+05/04/2023 09:58:25 AM [INFO] tf2_model_name - roberta-base
+05/04/2023 09:58:25 AM [INFO] use_pretrained_tf2 - 0
+05/04/2023 09:58:25 AM [INFO] sentence_pooling - none
+05/04/2023 09:58:25 AM [INFO] freeze_emb_layer - False
+05/04/2023 09:58:25 AM [INFO] exp_count - 0
+05/04/2023 09:58:25 AM [INFO] fp16 - 0
+05/04/2023 09:58:25 AM [INFO] ------------------------------------------------------------
+05/04/2023 09:58:25 AM [DEBUG] initiating training process...
+05/04/2023 09:58:30 AM [DEBUG] ModelWrapper(
+  (doc_encoder): TransformerModel(
+    (tf2): RobertaModel(
+      (embeddings): RobertaEmbeddings(
+        (word_embeddings): Embedding(50265, 768, padding_idx=1)
+        (position_embeddings): Embedding(514, 768, padding_idx=1)
+        (token_type_embeddings): Embedding(1, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): RobertaEncoder(
+        (layer): ModuleList(
+          (0): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (1): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (2): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (3): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (4): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (5): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (6): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (7): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (8): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (9): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (10): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (11): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+    )
+  )
+  (task_head): TexClassificationHead(
+    (dense): Linear(in_features=768, out_features=768, bias=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+    (out_proj): Linear(in_features=768, out_features=3, bias=True)
+  )
+  (train_metric): Accuracy()
+  (val_metric): Accuracy()
+  (test_metric): Accuracy()
+)
+05/04/2023 09:58:30 AM [INFO] Model has 124647939 trainable parameters
+05/04/2023 09:58:33 AM [DEBUG] about to start training loop...
+05/04/2023 09:58:36 AM [INFO] epoch : 0 - average_val_loss : 1.047627, overall_val_acc : 0.625000
+05/04/2023 10:02:15 AM [INFO] epoch : 0 - average_val_loss : 1.029787, overall_val_acc : 0.473750
+05/04/2023 10:02:31 AM [INFO] epoch : 0 - average_train_loss : 1.050053, overall_train_acc : 0.472187
+05/04/2023 10:06:11 AM [INFO] epoch : 1 - average_val_loss : 1.010648, overall_val_acc : 0.560000
+05/04/2023 10:06:27 AM [INFO] epoch : 1 - average_train_loss : 0.963483, overall_train_acc : 0.565313
+05/04/2023 10:06:28 AM [DEBUG] training done.
+05/04/2023 10:10:40 AM [INFO] featurizing the gcdc corpus: All for task: 3-way-classification with model architecture: vanilla
+05/04/2023 10:10:43 AM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
+05/04/2023 10:10:43 AM [DEBUG] working on test dataset 
+05/04/2023 10:10:43 AM [DEBUG] <Done>
+05/04/2023 10:10:43 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 10:10:43 AM [INFO] post-processing the dataset
+05/04/2023 10:10:43 AM [INFO] data preprocessed: 800, sentences preprocessed: 800
+05/04/2023 10:10:43 AM [INFO] featurizing the datasets..
+05/04/2023 10:10:43 AM [DEBUG] 800 data instance processed. max sent_seq_length: 512
+05/04/2023 10:10:44 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 10:10:44 AM [INFO] label distribution in test dataset (total count: 800)
+05/04/2023 10:10:44 AM [INFO] {2: 384, 1: 171, 0: 245}
+05/04/2023 10:10:44 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 10:10:44 AM [INFO] 
+command line argument captured ..
+05/04/2023 10:10:44 AM [INFO] ------------------------------------------------------------
+05/04/2023 10:10:44 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 10:10:44 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-vanilla-3-way-classification-roberta-base/epoch=1.ckpt
+05/04/2023 10:10:44 AM [INFO] gpus - 1
+05/04/2023 10:10:44 AM [INFO] epochs - 10
+05/04/2023 10:10:44 AM [INFO] batch_size - 2
+05/04/2023 10:10:44 AM [INFO] learning_rate - 1e-06
+05/04/2023 10:10:44 AM [INFO] clip_grad_norm - 0.0
+05/04/2023 10:10:44 AM [INFO] weight_decay - 0.01
+05/04/2023 10:10:44 AM [INFO] dropout_rate - 0.1
+05/04/2023 10:10:44 AM [INFO] enable_scheduler - False
+05/04/2023 10:10:44 AM [INFO] warmup_steps - 0.01
+05/04/2023 10:10:44 AM [INFO] margin - 1.0
+05/04/2023 10:10:44 AM [INFO] corpus - gcdc
+05/04/2023 10:10:44 AM [INFO] sub_corpus - All
+05/04/2023 10:10:44 AM [INFO] max_seq_len - 512
+05/04/2023 10:10:44 AM [INFO] max_fact_count - 50
+05/04/2023 10:10:44 AM [INFO] max_fact_seq_len - 50
+05/04/2023 10:10:44 AM [INFO] permutation_count - 20
+05/04/2023 10:10:44 AM [INFO] with_replacement - 1
+05/04/2023 10:10:44 AM [INFO] train_dataset_count - None
+05/04/2023 10:10:44 AM [INFO] val_dataset_count - None
+05/04/2023 10:10:44 AM [INFO] test_dataset_count - 800
+05/04/2023 10:10:44 AM [INFO] inverse_pra - 0
+05/04/2023 10:10:44 AM [INFO] task - 3-way-classification
+05/04/2023 10:10:44 AM [INFO] enable_kldiv - False
+05/04/2023 10:10:44 AM [INFO] label_smoothing - 0.1
+05/04/2023 10:10:44 AM [INFO] inference - True
+05/04/2023 10:10:44 AM [INFO] online_mode - 0
+05/04/2023 10:10:44 AM [INFO] logger_exp_name - gcdc-All-vanilla-3-way-classification-roberta-base
+05/04/2023 10:10:44 AM [INFO] arch - vanilla
+05/04/2023 10:10:44 AM [INFO] disable_mtl - 0
+05/04/2023 10:10:44 AM [INFO] mtl_base_arch - vanilla
+05/04/2023 10:10:44 AM [INFO] model_name - roberta-base
+05/04/2023 10:10:44 AM [INFO] tf2_model_name - roberta-base
+05/04/2023 10:10:44 AM [INFO] use_pretrained_tf2 - 0
+05/04/2023 10:10:44 AM [INFO] sentence_pooling - none
+05/04/2023 10:10:44 AM [INFO] freeze_emb_layer - True
+05/04/2023 10:10:44 AM [INFO] exp_count - 0
+05/04/2023 10:10:44 AM [INFO] fp16 - 0
+05/04/2023 10:10:44 AM [INFO] ------------------------------------------------------------
+05/04/2023 10:10:44 AM [DEBUG] initiating inference process...
+05/04/2023 10:10:48 AM [INFO] frozed embedding layer
+05/04/2023 10:10:48 AM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-vanilla-3-way-classification-roberta-base/epoch=1.ckpt
+05/04/2023 10:11:06 AM [INFO] frozed embedding layer
+05/04/2023 10:11:06 AM [DEBUG] loaded model successfully !!!
+05/04/2023 10:11:06 AM [INFO] testing on dataset : gcdc ( sub_dataset All ) on task : 3-way-classification
+05/04/2023 10:12:42 AM [INFO] featurizing the gcdc corpus: All for task: 3-way-classification with model architecture: vanilla
+05/04/2023 10:12:44 AM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
+05/04/2023 10:12:44 AM [DEBUG] working on test dataset 
+05/04/2023 10:12:44 AM [DEBUG] <Done>
+05/04/2023 10:12:44 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 10:12:44 AM [INFO] post-processing the dataset
+05/04/2023 10:12:44 AM [INFO] data preprocessed: 800, sentences preprocessed: 800
+05/04/2023 10:12:45 AM [INFO] featurizing the datasets..
+05/04/2023 10:12:45 AM [DEBUG] 800 data instance processed. max sent_seq_length: 512
+05/04/2023 10:12:45 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 10:12:45 AM [INFO] label distribution in test dataset (total count: 800)
+05/04/2023 10:12:45 AM [INFO] {2: 384, 1: 171, 0: 245}
+05/04/2023 10:12:45 AM [DEBUG] ------------------------------------------------------------
+05/04/2023 10:12:45 AM [INFO] 
+command line argument captured ..
+05/04/2023 10:12:45 AM [INFO] ------------------------------------------------------------
+05/04/2023 10:12:45 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 10:12:45 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-vanilla-3-way-classification-roberta-base/epoch=1.ckpt
+05/04/2023 10:12:45 AM [INFO] gpus - 1
+05/04/2023 10:12:45 AM [INFO] epochs - 10
+05/04/2023 10:12:45 AM [INFO] batch_size - 2
+05/04/2023 10:12:45 AM [INFO] learning_rate - 1e-06
+05/04/2023 10:12:45 AM [INFO] clip_grad_norm - 0.0
+05/04/2023 10:12:45 AM [INFO] weight_decay - 0.01
+05/04/2023 10:12:45 AM [INFO] dropout_rate - 0.1
+05/04/2023 10:12:45 AM [INFO] enable_scheduler - False
+05/04/2023 10:12:45 AM [INFO] warmup_steps - 0.01
+05/04/2023 10:12:45 AM [INFO] margin - 1.0
+05/04/2023 10:12:45 AM [INFO] corpus - gcdc
+05/04/2023 10:12:45 AM [INFO] sub_corpus - All
+05/04/2023 10:12:45 AM [INFO] max_seq_len - 512
+05/04/2023 10:12:45 AM [INFO] max_fact_count - 50
+05/04/2023 10:12:45 AM [INFO] max_fact_seq_len - 50
+05/04/2023 10:12:45 AM [INFO] permutation_count - 20
+05/04/2023 10:12:45 AM [INFO] with_replacement - 1
+05/04/2023 10:12:45 AM [INFO] train_dataset_count - None
+05/04/2023 10:12:45 AM [INFO] val_dataset_count - None
+05/04/2023 10:12:45 AM [INFO] test_dataset_count - 800
+05/04/2023 10:12:45 AM [INFO] inverse_pra - 0
+05/04/2023 10:12:45 AM [INFO] task - 3-way-classification
+05/04/2023 10:12:45 AM [INFO] enable_kldiv - False
+05/04/2023 10:12:45 AM [INFO] label_smoothing - 0.1
+05/04/2023 10:12:45 AM [INFO] inference - True
+05/04/2023 10:12:45 AM [INFO] online_mode - 0
+05/04/2023 10:12:45 AM [INFO] logger_exp_name - gcdc-All-vanilla-3-way-classification-roberta-base
+05/04/2023 10:12:45 AM [INFO] arch - vanilla
+05/04/2023 10:12:45 AM [INFO] disable_mtl - 0
+05/04/2023 10:12:45 AM [INFO] mtl_base_arch - vanilla
+05/04/2023 10:12:45 AM [INFO] model_name - roberta-base
+05/04/2023 10:12:45 AM [INFO] tf2_model_name - roberta-base
+05/04/2023 10:12:45 AM [INFO] use_pretrained_tf2 - 0
+05/04/2023 10:12:45 AM [INFO] sentence_pooling - none
+05/04/2023 10:12:45 AM [INFO] freeze_emb_layer - True
+05/04/2023 10:12:45 AM [INFO] exp_count - 0
+05/04/2023 10:12:45 AM [INFO] fp16 - 0
+05/04/2023 10:12:45 AM [INFO] ------------------------------------------------------------
+05/04/2023 10:12:45 AM [DEBUG] initiating inference process...
+05/04/2023 10:12:49 AM [INFO] frozed embedding layer
+05/04/2023 10:12:49 AM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-vanilla-3-way-classification-roberta-base/epoch=1.ckpt
+05/04/2023 10:12:55 AM [INFO] frozed embedding layer
+05/04/2023 10:12:55 AM [DEBUG] loaded model successfully !!!
+05/04/2023 10:12:55 AM [INFO] testing on dataset : gcdc ( sub_dataset All ) on task : 3-way-classification
+05/04/2023 10:13:13 AM [INFO] epoch : 0 - average_test_loss : 1.006745, overall_test_acc : 0.551250
+05/04/2023 10:13:13 AM [DEBUG] testing done !!!

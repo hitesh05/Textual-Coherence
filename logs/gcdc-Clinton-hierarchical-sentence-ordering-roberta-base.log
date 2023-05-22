@@ -1,0 +1,65 @@
+05/04/2023 07:38:45 PM [INFO] featurizing the gcdc corpus: Clinton for task: sentence-ordering with model architecture: hierarchical
+05/04/2023 07:38:47 PM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
+05/04/2023 07:38:47 PM [DEBUG] working on test dataset 
+05/04/2023 07:38:47 PM [DEBUG] <Done>
+05/04/2023 07:38:47 PM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:38:47 PM [INFO] single sentence doc count: 0, total doc count: 200, obtained permutation dataset count: 4000
+05/04/2023 07:38:48 PM [INFO] post-processing the dataset
+05/04/2023 07:38:48 PM [INFO] data preprocessed: 4000, sentences preprocessed: 8000
+05/04/2023 07:38:49 PM [INFO] featurizing the datasets..
+05/04/2023 07:38:49 PM [DEBUG] 4000 data instance processed. max sent_seq_length: 512
+05/04/2023 07:38:54 PM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:38:54 PM [INFO] label distribution in test dataset (total count: 4000)
+05/04/2023 07:38:54 PM [INFO] {1: 2000, -1: 2000}
+05/04/2023 07:38:54 PM [DEBUG] ------------------------------------------------------------
+05/04/2023 07:38:54 PM [INFO] 
+command line argument captured ..
+05/04/2023 07:38:54 PM [INFO] ------------------------------------------------------------
+05/04/2023 07:38:54 PM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
+05/04/2023 07:38:54 PM [INFO] checkpoint_path - /home2/devesh.marwah/model_hierarichal.ckpt
+05/04/2023 07:38:54 PM [INFO] gpus - 1
+05/04/2023 07:38:54 PM [INFO] epochs - 10
+05/04/2023 07:38:54 PM [INFO] batch_size - 2
+05/04/2023 07:38:54 PM [INFO] learning_rate - 1e-06
+05/04/2023 07:38:54 PM [INFO] clip_grad_norm - 0.0
+05/04/2023 07:38:54 PM [INFO] weight_decay - 0.01
+05/04/2023 07:38:54 PM [INFO] dropout_rate - 0.1
+05/04/2023 07:38:54 PM [INFO] enable_scheduler - False
+05/04/2023 07:38:54 PM [INFO] warmup_steps - 0.01
+05/04/2023 07:38:54 PM [INFO] margin - 1.0
+05/04/2023 07:38:54 PM [INFO] corpus - gcdc
+05/04/2023 07:38:54 PM [INFO] sub_corpus - Clinton
+05/04/2023 07:38:54 PM [INFO] max_seq_len - 512
+05/04/2023 07:38:54 PM [INFO] max_fact_count - 50
+05/04/2023 07:38:54 PM [INFO] max_fact_seq_len - 50
+05/04/2023 07:38:54 PM [INFO] permutation_count - 20
+05/04/2023 07:38:54 PM [INFO] with_replacement - 1
+05/04/2023 07:38:54 PM [INFO] train_dataset_count - None
+05/04/2023 07:38:54 PM [INFO] val_dataset_count - None
+05/04/2023 07:38:54 PM [INFO] test_dataset_count - 4000
+05/04/2023 07:38:54 PM [INFO] inverse_pra - 0
+05/04/2023 07:38:54 PM [INFO] task - sentence-ordering
+05/04/2023 07:38:54 PM [INFO] enable_kldiv - False
+05/04/2023 07:38:54 PM [INFO] label_smoothing - 0.1
+05/04/2023 07:38:54 PM [INFO] inference - True
+05/04/2023 07:38:54 PM [INFO] online_mode - 0
+05/04/2023 07:38:54 PM [INFO] logger_exp_name - gcdc-Clinton-hierarchical-sentence-ordering-roberta-base
+05/04/2023 07:38:54 PM [INFO] arch - hierarchical
+05/04/2023 07:38:54 PM [INFO] disable_mtl - 0
+05/04/2023 07:38:54 PM [INFO] mtl_base_arch - vanilla
+05/04/2023 07:38:54 PM [INFO] model_name - roberta-base
+05/04/2023 07:38:54 PM [INFO] tf2_model_name - roberta-base
+05/04/2023 07:38:54 PM [INFO] use_pretrained_tf2 - 0
+05/04/2023 07:38:54 PM [INFO] sentence_pooling - none
+05/04/2023 07:38:54 PM [INFO] freeze_emb_layer - True
+05/04/2023 07:38:54 PM [INFO] exp_count - 0
+05/04/2023 07:38:54 PM [INFO] fp16 - 0
+05/04/2023 07:38:54 PM [INFO] ------------------------------------------------------------
+05/04/2023 07:38:54 PM [DEBUG] initiating inference process...
+05/04/2023 07:39:09 PM [INFO] frozed embedding layer
+05/04/2023 07:39:09 PM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/model_hierarichal.ckpt
+05/04/2023 07:39:42 PM [INFO] frozed embedding layer
+05/04/2023 07:39:43 PM [DEBUG] loaded model successfully !!!
+05/04/2023 07:39:43 PM [INFO] testing on dataset : gcdc ( sub_dataset Clinton ) on task : sentence-ordering
+05/04/2023 07:42:27 PM [INFO] epoch : 0 - average_test_loss : 1.101874, overall_test_acc : 0.994500
+05/04/2023 07:42:27 PM [DEBUG] testing done !!!
